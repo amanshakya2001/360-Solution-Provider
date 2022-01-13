@@ -1,0 +1,79 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.image
+{
+    width: 80%;
+}
+.container-fluid .navbar .nav1
+{
+    width: 10%;
+}
+.container-fluid .navbar .nav2 ul li a
+{
+    text-decoration: none;
+    color: grey;
+    text-transform: capitalize;
+}
+.container-fluid .navbar .nav2 ul li a:hover
+{
+    color: #5e57e3;
+    font-weight: bold;
+}
+.container-fluid .navbar .nav3 ul
+{
+    float: right;
+
+}
+.container-fluid .navbar .nav3 ul .purple
+{
+    background-color: #5e57e3;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.container-fluid .navbar .nav3 ul .purple a
+{
+    color: white;
+}
+.container-fluid .navbar .nav3 ul li
+{
+    margin-right: 20px;
+}
+.container-fluid .navbar .nav3 ul li a
+{
+    color: #5e57e3;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.container-fluid .navbar .nav3 ul li a i
+{
+    margin-left: 5px;
+}
+
+.container-fluid .section1 .row1 .video
+{
+    padding-top: 100px;
+}
+.container-fluid .section1 .row1 .text p
+{
+    padding: 50px 50px 10px 50px;
+    text-align: justify ;
+}
+.container-fluid .section1 .row2 
+{
+    padding-left: 200px;
+    margin-bottom: 30px;
+}
+
+.container-fluid .section1 .row2 a
+{
+    background-color: #5e57e3;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
