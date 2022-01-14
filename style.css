@@ -77,3 +77,7 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+.container-fluid .section1 .row2 a i
+{
+    margin: 5px;
+}
