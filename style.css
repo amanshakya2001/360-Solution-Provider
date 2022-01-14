@@ -77,11 +77,6 @@
     text-decoration: none;
     text-transform: capitalize;
 }
-<<<<<<< HEAD
-.container-fluid .section1 .row2 a i
-{
-    margin: 5px;
-=======
 .container-fluid .section2 .row2a
 {
     padding-left: 80px;
@@ -123,5 +118,4 @@
 }
 .container-fluid .section2 .row2b .container-fluid .col-md-3 .card .card-img-top
 {
->>>>>>> c7f6cf390ff18a2f544100e2e3d1856795ea5422
 }
