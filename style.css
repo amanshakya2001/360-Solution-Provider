@@ -4,6 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container-fluid .fa-facebook
+{
+    background-color: #5e57e3;
+    color: blue;
+    font-size: 50px;
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 10;
+}
 .image
 {
     width: 80%;
@@ -115,7 +125,4 @@
 .container-fluid .section2 .row2b .container-fluid .col-md-3 .card h5
 {
     text-transform: capitalize;
-}
-.container-fluid .section2 .row2b .container-fluid .col-md-3 .card .card-img-top
-{
 }
