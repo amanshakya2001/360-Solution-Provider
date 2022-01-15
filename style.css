@@ -102,6 +102,11 @@
 }
 .container-fluid .section2 .row2a .col-md-3 i:hover
 {
+    color: black;
+}
+.container-fluid .section2 .row2a .col-md-3 i
+{
+    font-size: 22px;
     color: rgba(255, 217, 0, 0.849);
 }
 .container-fluid .section2 .row2a .col-md-3 h1
