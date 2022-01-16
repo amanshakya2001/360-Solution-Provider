@@ -8,20 +8,15 @@
 {
     padding: 0;
 }
-.container-fluid .chatbot
+
+.container-fluid .chatbot .chat
 {
-    background-color: white;
+    width: 7%;
     position: fixed;
     bottom: 20px;
     right: 20px;
     border-radius: 50%;
     z-index: 10;
-    padding: 0;
-}
-.container-fluid .chatbot .fa-facebook
-{
-    color: blue;
-    font-size: 50px;
 }
 .image
 {
@@ -137,6 +132,7 @@
 .container-fluid .section2 .row2b .row .col-md-3 .card
 {
     height: 400px;
+    background-color: rgb(202, 207, 248);
 }
 .container-fluid .section2 .row2b .row .col-md-3 .card h5
 {
@@ -146,4 +142,68 @@
 {
     height: 200px;
     width: 100%;
+}
+.container-fluid .section2 .row2b .row .col-md-3 .card .card-body .btn
+{
+    background-color: #5e57e3;
+    color: white;
+}
+.container-fluid .section3 a
+{
+    color: #5e57e3;
+    text-transform: capitalize;
+    margin: 30px;
+}
+.container-fluid .section3 h1
+{
+    margin: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 29px;
+}
+.container-fluid .section3 .row
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+.container-fluid .section3 .row .col-md-3 .card
+{
+    height: 350px;
+    background-color: rgb(202, 207, 248);
+}
+.container-fluid .section3 .row .col-md-3 .card h5
+{
+    text-transform: capitalize;
+}
+.container-fluid .section3 .row .col-md-3 .card img
+{
+    height: 200px;
+    width: 100%;
+}
+.container-fluid .section3 .row .col-md-3 .card .card-body .btn
+{
+    background-color: #5e57e3;
+    color: white;
+}
+.container-fluid .section3 .progress
+{
+    margin: 30px;
+    margin-bottom: 70px;
+}
+
+
+
+/* Icons colors */
+.fa-twitter
+{
+    color: skyblue;
+}
+.fa-linkedin
+{
+    color: blue;
+}
+.fa-instagram
+{
+    color: palevioletred;
 }
