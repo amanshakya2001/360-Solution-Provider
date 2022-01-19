@@ -7,8 +7,13 @@
 .container-fluid
 {
     padding: 0;
+    width: 100%;
 }
-
+.row
+{
+    margin:0px;
+    width: 100%;
+}
 .container-fluid .chatbot .chat
 {
     width: 7%;
@@ -27,6 +32,10 @@
 {
     width: 100%;
     height: 60px;
+}
+.container-fluid .section1,.container-fluid ,.section1 .row
+{
+    width: 100%;
 }
 .container-fluid .navbar .nav1
 {
@@ -149,7 +158,7 @@
 {
     text-transform:uppercase;
     font-size: 15px;
-    padding: 10px;
+    padding-top: 10px;
 }
 .container-fluid .section2 .row2a .button
 {
@@ -253,6 +262,10 @@
 {
     background-color: #5e57e3;
     color: white;
+}
+.container-fluid .section4,.container-fluid .section4 .row
+{
+    width: 100%;
 }
 .container-fluid .section3 .progress
 {
