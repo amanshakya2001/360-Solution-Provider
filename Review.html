@@ -13,22 +13,23 @@
 .row2a
 {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     padding: 80px;
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assest/review_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
+    background-repeat: no-repeat; 
+    background-size: 100% 100%; 
+  }
 .row2a .col
 {
     /* padding-left: 750px; */
-    padding-left: 100px;
+    padding-left: 200px;
 }
 .row2a .col h1
 {
 
     text-transform:uppercase;
     margin-bottom: 25px;
+    color:white;
 }
 .row2a .col .col-md-3 i
 {
@@ -38,14 +39,38 @@
 }
 .row2a .col .col-md-3 h1
 {
-    font-size: 20px; 
+    font-size: 25px; 
+    color: white;
+}
+.row2a .col form .form-group textarea
+{
+    width:45%;
+    height: 100px;
+    padding: 10px;
+}
+.row2a .col form .subtn
+{
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-left: 35%;
+    background-color: #5e57e3 ;
+    border: 0px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-
+.row2a .col form .subtn:hover
+{
+    background-color: transparent;
+    border:2px solid #5e57e3;
+    color:#5e57e3;
+}
 
 </style>
 </head>
 <body>
+    <!-- bandariya ye review page bana lo tum -->
     <div class="container-fluid">
         <div class="chatbot">
             <img src="./assest/chatbot.png" class="chat" alt="">
@@ -54,11 +79,13 @@
         <!-- navbar -->
         <div class="navbar navbar-light bg-light">
             <div class="nav1">
-                <img src="./assest/logo.JPG" alt="" class="image"></div>
+                <img src="./assest/logo.png" alt="" class="image">
+                <p><span>solution</span> provider</p>
+            </div>
             <div class="nav2 w-50">
                 <ul class="nav navbar">
-                    <li class="navbar-item"><a href="#">home</a></li>
-                    <li class="navbar-item"><a href="#">category</a></li>
+                    <li class="navbar-item"><a href="./index.html">home</a></li>
+                    <li class="navbar-item"><a href="./Category.html">category</a></li>
                     <li class="navbar-item"><a href="#">review</a></li>
                     <li class="navbar-item"><a href="#">about us</a></li>
                     <li class="navbar-item"><a href="#">help</a></li>
@@ -69,49 +96,53 @@
                     <li class="navbar-item"><a href="#">Login<i class="fa fa-angle-right"></i></a></li>
                     <li class="navbar-item purple"><a href="#">Sign up<i class="fa fa-angle-right"></i></a></li>
                 </ul>
+            </div> 
+        </div>
+        <div class="row2a row" >
+            <div class="col">
+                <h1>Review</h1>
+                <div class="col-md-3">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h1>solution</h1>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h1>time taken</h1>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h1>effectiveness</h1>
+                </div>
+                <div class="col-md-3">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <h1>rate us</h1>
+                </div>
+                <form action="#">
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your comment !">
+                        </textarea>
+                    </div>
+                    <input class="subtn" type="submit">
+                </form>
             </div>
         </div>
-            <div class="row2a row" >
-                <div class="col">
-                    <h1>Review</h1>
-                    <div class="col-md-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <h1>solution</h1>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <h1>time taken</h1>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <h1>effectiveness</h1>
-                    </div>
-                    <div class="col-md-3">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <h1>rate us</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row2b row">
-
-            </div>
-     </div>
+    </div>
 </body>
 
 </html>
