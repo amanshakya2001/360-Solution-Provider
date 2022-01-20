@@ -278,17 +278,51 @@
     color: #5e57e3;
 }
 
+#row1{
+    background-color: rgb(202, 207, 248);
+    padding:100px 0px;
+    margin: 0px;
+}
+.col-md-4{
+    background-color: rgb(202, 207, 248);
+    text-align: center ;
+}
+.col-md-4 .Signup{
+    background-color: rgb(7, 7, 190);
+    text-decoration: none;
+    color: white;
+    border-radius: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin: 20px;
+}
+.col-md-4 .ab{
+    text-decoration: none;
+    color: rgb(7,7, 190);
+}
+#row2{
+    padding: 50px 30px;
+    margin: 0px;
+}
+.col-md-6 p{
+    margin-top: 60px;
+}
 
 /* Icons colors */
 .fa-twitter
 {
     color: skyblue;
+    margin: 10px;
 }
 .fa-linkedin
 {
     color: blue;
+    margin: 10px;
 }
 .fa-instagram
 {
     color: palevioletred;
+    margin: 10px;
 }
