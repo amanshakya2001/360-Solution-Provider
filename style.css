@@ -340,3 +340,15 @@
     color: palevioletred;
     margin: 10px;
 }
+.fa-instagram:hover
+{
+    font-size: 100px;
+}
+.fa-linkedin:hover
+{
+    font-size: 100px;
+}
+.fa-twitter:hover
+{
+    font-size: 100px;
+}
