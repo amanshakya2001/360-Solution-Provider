@@ -329,16 +329,19 @@
 {
     color: skyblue;
     margin: 10px;
+    transition: all 0.5s;
 }
 .fa-linkedin
 {
     color: blue;
     margin: 10px;
+    transition: all 0.5s;
 }
 .fa-instagram
 {
     color: palevioletred;
     margin: 10px;
+    transition: all 0.5s;
 }
 .fa-instagram:hover
 {
