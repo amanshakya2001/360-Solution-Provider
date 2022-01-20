@@ -287,7 +287,8 @@
     background-color: rgb(202, 207, 248);
     text-align: center ;
 }
-.col-md-4 .Signup{
+.col-md-4 .Signup
+{
     background-color: rgb(7, 7, 190);
     text-decoration: none;
     color: white;
@@ -298,9 +299,22 @@
     padding-right: 15px;
     margin: 20px;
 }
-.col-md-4 .ab{
+.col-md-4 .Signup:hover
+{
+    background-color: transparent;
+    color: #5e57e3;
+    border: 2px solid #5e57e3   ;
+}
+.col-md-4 .ab
+{
     text-decoration: none;
     color: rgb(7,7, 190);
+}
+.col-md-4 .ab:hover
+{
+    border: 2px solid #5e57e3;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 #row2{
     padding: 50px 30px;
