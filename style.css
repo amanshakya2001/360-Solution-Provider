@@ -82,6 +82,7 @@
 .container-fluid .navbar .nav3 ul .purple a
 {
     color: white;
+    border: 2px solid #f8f9fa;
     transition: all 0.2s;
 }
 .container-fluid .navbar .nav3 ul .purple a:hover
@@ -95,6 +96,7 @@
     margin-right: 20px;
     color: #5e57e3;
     text-decoration: none;
+    border: 2px solid #f8f9fa;
     padding: 10px 15px;
     text-transform: capitalize;
     transition: all 0.2s;
@@ -130,6 +132,7 @@
     padding: 5px 15px;
     color: white;
     border-radius: 10px;
+    border: 2px solid white;
     text-decoration: none;
     text-transform: capitalize;
     transition: all 0.2s;
@@ -183,6 +186,7 @@
 {
     height: 400px;
     background-color: rgb(202, 207, 248);
+    border: 2px solid white;
     transition: all 0.2s;
 }
 .container-fluid .section2 .row2b .row .col-md-3 .card:hover
@@ -207,6 +211,7 @@
 {
     background-color: #5e57e3;
     color: white;
+    border: 2px solid transparent;
     transition: all 0.2s;
 }
 .container-fluid .section2 .row2b .row .col-md-3 .card .card-body .btn:hover
@@ -238,6 +243,7 @@
 {
     height: 350px;
     background-color: rgb(202, 207, 248);
+    border: 2px solid transparent;
     transition: all 0.2s;
 }
 .container-fluid .section3 .row .col-md-3 .card:hover 
@@ -270,6 +276,7 @@
 .container-fluid .section3 .progress
 {
     margin: 30px;
+    border: 2px solid transparent;
     margin-bottom: 70px;
 }
 .container-fluid .section4 .row .col-md-4 a.signup:hover
@@ -293,6 +300,7 @@
     text-decoration: none;
     color: white;
     border-radius: 7px;
+    border: 2px solid transparent;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 20px;
@@ -308,13 +316,14 @@
 .col-md-4 .ab
 {
     text-decoration: none;
+    border: 2px solid transparent;
+    padding: 10px 15px;
+    border-radius: 10px;
     color: rgb(7,7, 190);
 }
 .col-md-4 .ab:hover
 {
     border: 2px solid #5e57e3;
-    padding: 10px 15px;
-    border-radius: 10px;
 }
 #row2{
     padding: 50px 30px;
