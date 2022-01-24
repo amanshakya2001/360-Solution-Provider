@@ -8,8 +8,72 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
-    
     <title>Help Page</title>
+<style>
+    .container-fluid .row2
+    {
+        width: 100%;
+        height: 86.7vh;
+        background-image: url(./assest/back.jpg);
+        background-color: black;
+        text-align: center;
+        padding: 80px;
+    }
+    .container-fluid .row2 h1
+    {
+        text-transform: capitalize;
+        color: white;
+        margin-bottom: 40px;
+    }
+    .container-fluid .row2 .inputgroup
+    {
+        margin: auto;
+        background-color: white;
+        width: 25%;
+        padding:  2px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .container-fluid .row2 .inputgroup .input
+    {
+        border: 0;
+        padding: 5px;
+        width: 80%;  
+    }
+    .container-fluid .row2 .inputgroup .input:focus
+    {
+        outline: none;
+    }
+    .container-fluid .row2 a
+    {
+        background-color: #5e57e3;
+        text-decoration: none;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 5px;
+        float: right; 
+    }
+    
+    .container-fluid .row2 .icons img
+    {
+        width: 5%;
+        margin: 10px;
+    }
+    .container-fluid .row2 .follow
+    {
+        background-color: #5e57e3;
+        /* width: fit-content; */
+        width: 15%;
+        margin: auto;
+        border-radius: 10px;
+        
+    }
+    .container-fluid .row2 .follow h1
+    {
+        font-size: 27px;
+    }
+
+</style>
 </head>
 <body>
     <div class="container-fluid w-100">
@@ -38,6 +102,28 @@
                     <li class="navbar-item purple"><a href="#">Sign up<i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
+        </div>
+        
+        <div class="row2">
+            <h1>how can we help?</h1>
+            <div class="inputgroup">
+                <input type="search" id="form1" class="input" placeholder="search" />
+                <a href="#"><i class="fas fa-search"></i></a>
+
+            </div>
+              <div class="icons row">
+                <img src="./assest/instagram_final.png" alt="">
+                <img src="./assest/linkedin.png" alt="">
+                <img src="./assest/twitter_final.png" alt="">
+              </div>
+
+               <div class="follow">
+                   <h1>follow</h1>
+               </div>
+        </div>
+
+
+        
         </div>
 
 
