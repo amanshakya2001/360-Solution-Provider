@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,72 +10,126 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>Help Page</title>
-<style>
-    .container-fluid .row2
-    {
-        width: 100%;
-        height: 86.7vh;
-        background-image: url(./assest/back.jpg);
-        background-color: black;
-        text-align: center;
-        padding: 80px;
-    }
-    .container-fluid .row2 h1
-    {
-        text-transform: capitalize;
-        color: white;
-        margin-bottom: 40px;
-    }
-    .container-fluid .row2 .inputgroup
-    {
-        margin: auto;
-        background-color: white;
-        width: 25%;
-        padding:  2px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .container-fluid .row2 .inputgroup .input
-    {
-        border: 0;
-        padding: 5px;
-        width: 80%;  
-    }
-    .container-fluid .row2 .inputgroup .input:focus
-    {
-        outline: none;
-    }
-    .container-fluid .row2 a
-    {
-        background-color: #5e57e3;
-        text-decoration: none;
-        color: white;
-        padding: 5px 8px;
-        border-radius: 5px;
-        float: right; 
-    }
-    
-    .container-fluid .row2 .icons img
-    {
-        width: 5%;
-        margin: 10px;
-    }
-    .container-fluid .row2 .follow
-    {
-        background-color: #5e57e3;
-        /* width: fit-content; */
-        width: 15%;
-        margin: auto;
-        border-radius: 10px;
-        
-    }
-    .container-fluid .row2 .follow h1
-    {
-        font-size: 27px;
-    }
+    <style>
+        .container-fluid .row2 {
+            width: 100%;
+            height: 86.7vh;
+            background-image: url(./assest/back.jpg);
+            background-color: black;
+            text-align: center;
+            padding: 80px;
+        }
 
-</style>
+        .container-fluid .row2 h1 {
+            text-transform: capitalize;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .container-fluid .row2 .inputgroup {
+            margin: auto;
+            background-color: white;
+            width: 25%;
+            padding: 3px;
+            border-radius: 5px;
+            margin-bottom: 100px;
+        }
+        .container-fluid .row2 .inputgroup:hover
+        {
+            box-shadow: 10px 10px 5px #000000;
+        }
+
+        .container-fluid .row2 .inputgroup .input {
+            border: 0;
+            padding: 5px;
+            width: 80%;
+        }
+
+        .container-fluid .row2 .inputgroup .input:focus {
+            outline: none;
+        }
+
+        .container-fluid .row2 a {
+            background-color: #5e57e3;
+            text-decoration: none;
+            color: white;
+            padding: 5px 8px;
+            border-radius: 5px;
+            float: right;
+            border: 1px solid transparent;
+        }
+
+        .container-fluid .row2 a:hover {
+            border: 1px solid #5e57e3;
+            background-color: transparent;
+            color: #5e57e3;
+        }
+
+        .container-fluid .row2 .icons {
+            width: 20%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .container-fluid .row2 .icons ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .container-fluid .row2 .icons ul li {
+            width: 33%;
+        }
+
+        .container-fluid .row2 .icons .icon-inner {
+            all: unset;
+            display: unset;
+        }
+
+        .container-fluid .row2 .icons img 
+        {
+            width: 80%;
+        }
+
+        .container-fluid .row2 .follow {
+            background-color: #5e57e3;
+            /* width: fit-content; */
+            width: 15%;
+            height: fit-content;
+            padding: 5px;
+            margin: auto;
+            border-radius: 10px;
+            animation: zoom-in-zoom-out 4s ease infinite;
+        }
+
+        @keyframes zoom-in-zoom-out {
+            0% {
+                transform: scale(0, 0);
+            }
+
+            25% {
+                transform: scale(1.5, 1.4);
+            }
+
+            50% {
+                transform: scale(1, 1);
+            }
+
+            100% {
+                transform: scale(0, 0);
+            }
+
+
+        }
+
+        .container-fluid .row2 .follow h1 {
+            font-size: 27px;
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Astha iss baar ye tum banaogi -->
     <div class="container-fluid w-100">
@@ -104,7 +159,7 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="row2">
             <h1>how can we help?</h1>
             <div class="inputgroup">
@@ -112,29 +167,22 @@
                 <a href="#"><i class="fas fa-search"></i></a>
 
             </div>
-              <div class="icons row">
-                <img src="./assest/instagram_final.png" alt="">
-                <img src="./assest/linkedin.png" alt="">
-                <img src="./assest/twitter_final.png" alt="">
-              </div>
+            <div class="icons row">
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" class="icon-inner"><img
+                                src="./assest/instagram_final.png" alt=""></a></li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" class="icon-inner"><img
+                                src="./assest/linkedin.png" alt=""></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" class="icon-inner"><img
+                                src="./assest/twitter_final.png" alt=""></a></li>
+                </ul>
+            </div>
 
-               <div class="follow">
-                   <h1>follow</h1>
-               </div>
+            <div class="follow">
+                <h1>follow</h1>
+            </div>
         </div>
-
-
-        
-        </div>
-
-
-
-
-
-
-
-
-
-    </div>      
+    </div>
 </body>
+
 </html>
