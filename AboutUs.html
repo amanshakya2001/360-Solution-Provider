@@ -17,6 +17,12 @@
             background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assest/computer.png);
             background-repeat: no-repeat;
             background-size: 100% 100%;
+            transition: all 0.5s;
+        }
+
+        .container-fluid .section-1:hover {
+            margin: 30px;
+            box-shadow: 15px 15px 5px #aaaaaa;
         }
 
         .container-fluid .section-1 h1 {
@@ -29,151 +35,191 @@
             text-align: justify;
             color: white;
         }
-        .container-fluid .section-2
-        {
+
+        .container-fluid .section-2 {
             margin-top: 70px;
             padding: 30px;
         }
-        .container-fluid .section-2 h2
-        {
+
+        .container-fluid .section-2 h2 {
             text-transform: uppercase;
             text-align: center;
             margin-bottom: 40px;
         }
-        .container-fluid .section-2 .col-md-3
-        {
+
+        .container-fluid .section-2 .col-md-3 {
             padding: 10px;
         }
-        .container-fluid .section-2 .col-md-3 p
-        {
+
+        .container-fluid .section-2 .col-md-3 p {
             text-transform: capitalize;
         }
-        .container-fluid .section-2 .col-md-3 .card-text
-        {
-            border:  1px solid black;
+
+        .container-fluid .section-2 .col-md-3 .card-text {
+            border: 1px solid black;
             padding: 20px;
+            transition: all 0.2s;
         }
-        .container-fluid .section-2 .col-md-3 .card-text p
-        {
+
+        .container-fluid .section-2 .col-md-3 .card-text:hover {
+            border: 2px solid #5e57e3;
+            box-shadow:
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+        }
+
+        .container-fluid .section-2 .col-md-3 .card-text p {
             text-transform: none;
             text-align: justify;
         }
-        .container-fluid .section-3
-        {
-            margin-top:70px ;
+
+        .container-fluid .section-3 {
+            margin-top: 70px;
             padding: 30px;
         }
-        .container-fluid .section-3 .row
-        {
+
+        .container-fluid .section-3 .row {
             margin-bottom: 50px;
         }
-        .container-fluid .section-3 h1
-        {
+
+        .container-fluid .section-3 h1 {
             margin-left: 100px;
             margin-bottom: 50px;
             text-transform: uppercase;
             color: #5e57e3;
             font-weight: bold;
+            transition: all 0.3s;
 
         }
-        .container-fluid .section-3 .col-md-4 
+        .container-fluid .section-3 h1:hover
         {
+            text-shadow: 5px 5px 5px #aaaaaa;
+        }
+        .container-fluid .section-3 .col-md-4 {
             background-color: white;
         }
-        .container-fluid .section-3 .col-md-4 img
-        {
+
+        .container-fluid .section-3 .col-md-4 img {
             width: 60%;
             border-radius: 50%;
+            transition: all 0.5s;
         }
-        .container-fluid .section-3 .col-md-4 p
+        .container-fluid .section-3 .col-md-4 img:hover
         {
+            box-shadow: 5px 5px 5px #aaaaaa;
+            width: 70%;
+        }
+
+        .container-fluid .section-3 .col-md-4 p {
             text-transform: capitalize;
             margin: 2px;
             font-weight: bold;
             font-size: 20px;
         }
-        .container-fluid .section-3 .col-md-8
-        {
+
+        .container-fluid .section-3 .col-md-8 {
             padding: 30px;
         }
-        .container-fluid .section-3 .col-md-8 p
-        {
+
+        .container-fluid .section-3 .col-md-8 p {
             text-align: justify;
             padding: 0px 70px;
         }
-        .container-fluid .section-3 .col-md-6
-        {
+
+        .container-fluid .section-3 .col-md-6 {
             padding: 30px;
         }
-        .container-fluid .section-3 .col-md-6 img
-        {
+
+        .container-fluid .section-3 .col-md-6 img {
             margin: auto;
             display: block;
+            border-radius: 50%;
             width: 50%;
             margin-bottom: 20px;
+            transition: all 0.5s;
         }
-        .container-fluid .section-3 .col-md-6 p
+        .container-fluid .section-3 .col-md-6 img:hover
         {
+            box-shadow: 5px 5px 5px #aaaaaa;
+            width: 60%;
+        }
+
+        .container-fluid .section-3 .col-md-6 p {
             margin: 2px;
             text-align: center;
             text-transform: capitalize;
             font-size: 20px;
             font-weight: bold;
         }
-        .container-fluid .section-3 .col-md-6 .about
-        {
+
+        .container-fluid .section-3 .col-md-6 .about {
             text-align: justify;
             font-size: 15px;
             font-weight: normal;
             padding: 50px;
         }
-        .container-fluid .section-3 .col-md-4
-        {
+
+        .container-fluid .section-3 .col-md-4 {
             padding: 30px;
         }
-        .container-fluid .section-3 .col-md-4 img
-        {
+
+        .container-fluid .section-3 .col-md-4 img {
             margin: auto;
             display: block;
             width: 50%;
             margin-bottom: 20px;
+            transition: all 0.5s;
         }
-        .container-fluid .section-3 .col-md-4 p
+        .container-fluid .section-3 .col-md-4 img:hover
         {
+            box-shadow: 5px 5px 5px #aaaaaa;
+            width: 60%;
+        }
+
+        .container-fluid .section-3 .col-md-4 p {
             margin: 2px;
             text-align: center;
             text-transform: capitalize;
             font-size: 20px;
             font-weight: bold;
         }
-        .container-fluid .section-3 .col-md-4 .about
-        {
+
+        .container-fluid .section-3 .col-md-4 .about {
             text-align: justify;
             font-size: 15px;
             font-weight: normal;
             padding: 15px;
         }
-        .container-fluid .section-3 .col-md-3
-        {
+
+        .container-fluid .section-3 .col-md-3 {
             padding: 30px;
         }
-        .container-fluid .section-3 .col-md-3 img
-        {
+
+        .container-fluid .section-3 .col-md-3 img {
             margin: auto;
             display: block;
             width: 50%;
             margin-bottom: 20px;
+            transition: all 0.5s;
+            border-radius: 50%;
         }
-        .container-fluid .section-3 .col-md-3 p
+        .container-fluid .section-3 .col-md-3 img:hover
         {
+            box-shadow: 5px 5px 5px #aaaaaa;
+            width: 60%;
+        }
+
+        .container-fluid .section-3 .col-md-3 p {
             margin: 2px;
             text-align: center;
             text-transform: capitalize;
             font-size: 20px;
             font-weight: bold;
         }
-        .container-fluid .section-3 .col-md-3 .about
-        {
+
+        .container-fluid .section-3 .col-md-3 .about {
             text-align: justify;
             font-size: 15px;
             font-weight: normal;
@@ -292,7 +338,15 @@
                     <p>founder</p>
                 </div>
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis repudiandae necessitatibus eaque eveniet porro vitae fugiat maiores inventore debitis nobis, commodi blanditiis tempore rerum a quis est esse quaerat excepturi impedit non molestiae? Dicta modi accusamus cumque nisi, veniam aspernatur sed necessitatibus nesciunt provident ducimus culpa ullam tempora voluptatem enim doloribus assumenda impedit facilis repellat aliquam atque corporis nobis iste, debitis exercitationem. Hic, autem? Nulla natus reiciendis nostrum voluptates laudantium perferendis nemo officia voluptas animi voluptatibus accusamus est, earum, beatae iusto itaque? Ex iste modi distinctio laborum laboriosam quaerat illo aliquam blanditiis sapiente, quod temporibus, amet consequuntur minima inventore?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis repudiandae
+                        necessitatibus eaque eveniet porro vitae fugiat maiores inventore debitis nobis, commodi
+                        blanditiis tempore rerum a quis est esse quaerat excepturi impedit non molestiae? Dicta modi
+                        accusamus cumque nisi, veniam aspernatur sed necessitatibus nesciunt provident ducimus culpa
+                        ullam tempora voluptatem enim doloribus assumenda impedit facilis repellat aliquam atque
+                        corporis nobis iste, debitis exercitationem. Hic, autem? Nulla natus reiciendis nostrum
+                        voluptates laudantium perferendis nemo officia voluptas animi voluptatibus accusamus est, earum,
+                        beatae iusto itaque? Ex iste modi distinctio laborum laboriosam quaerat illo aliquam blanditiis
+                        sapiente, quod temporibus, amet consequuntur minima inventore?</p>
                 </div>
             </div>
 
@@ -301,13 +355,21 @@
                     <img src="./assest/avtar.png" alt="">
                     <p>aman shakya</p>
                     <p>c.t.o</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-6">
                     <img src="./assest/avtar.png" alt="">
                     <p>tarun gupta</p>
                     <p>design head</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
             </div>
 
@@ -316,19 +378,31 @@
                     <img src="./assest/avtar.png" alt="">
                     <p>animesh dixit</p>
                     <p>senior designer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-4">
                     <img src="./assest/avtar.png" alt="">
                     <p>astha verma</p>
                     <p>web developer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-4">
                     <img src="./assest/avtar.png" alt="">
                     <p>taruwarsh kumar</p>
                     <p>app developer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
             </div>
 
@@ -337,19 +411,31 @@
                     <img src="./assest/avtar.png" alt="">
                     <p>nazia fareen</p>
                     <p>content head</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-4">
                     <img src="./assest/avtar.png" alt="">
                     <p>aman chauhan</p>
                     <p>junior developer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-4">
                     <img src="./assest/avtar.png" alt="">
                     <p>abhishek sungh</p>
                     <p>ml engineer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
             </div>
             <div class="row">
@@ -357,25 +443,41 @@
                     <img src="./assest/avtar.png" alt="">
                     <p>name</p>
                     <p>designation</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-3">
                     <img src="./assest/avtar.png" alt="">
                     <p>name</p>
                     <p>designation</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-3">
                     <img src="./assest/avtar.png" alt="">
                     <p>name</p>
                     <p>designation</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
                 <div class="col-md-3">
                     <img src="./assest/avtar.png" alt="">
                     <p>name</p>
                     <p>designation</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias voluptate?</p>
+                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
+                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
+                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
+                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
+                        voluptate?</p>
                 </div>
             </div>
 
