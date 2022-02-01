@@ -24,8 +24,12 @@
             <div class="nav1">
                 <img src="./assest/logo.png" alt="" class="image">
                 <p><span>solution</span> provider</p>
+                <input type="checkbox" name="chk" id="chk">
+                <label for="chk" class="show-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
             </div>
-            <div class="nav2 w-50">
+            <div class="nav2">
                 <ul class="nav navbar">
                     <li class="navbar-item"><a href="./index.html">home</a></li>
                     <li class="navbar-item"><a href="./Category.html">category</a></li>
@@ -34,10 +38,10 @@
                     <li class="navbar-item"><a href="./Help.html">help</a></li>
                 </ul>
             </div>
-            <div class="nav3 w-25">
+            <div class="nav3 w-md-25">
                 <ul class="nav navbar">
-                    <li class="navbar-item"><a href="#">Login<i class="fa fa-angle-right"></i></a></li>
-                    <li class="navbar-item purple"><a href="#">Sign up<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item"><a href="#" class="loginbtn">Login<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item purple"><a href="#" class="signupbtn">Sign up<i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -246,12 +250,107 @@
             <!-- by taruwarsh kumar -->
         </div>
     </div>
+    <!-- login card -->
+    <div class="logincard">
+        <img src="./assest/avtarlogin.png" class="loginavtar"alt="">
+        <a href="#" class="logincross"><i class="fa fa-times"></i></a>
+        <h1>enter your credentials</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email"required><br>
+            <input type="text" id="lname" name="lname" placeholder="Password" required><br><br>
+            <div class="loginbottom">
+                <div class="col-md-6">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                    <a href="#" class="forgot">forgot password?</a>
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+            </div>
+          </form>
+    </div>
 
+    <!-- forgot password -->
+    <div class="forgotcard">
+        <a href="#" class="forgotcross"><i class="fa fa-times"></i></a>
+        <h1>forgot password</h1>
+        <form>
+            <input type="text" id="email" name="email" placeholder="Enter Email"required><br>
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- signup -->
+    <div class="signupcard">
+        <img src="./assest/avtarlogin.png" class="signupavtar"alt="">
+        <a href="#" class="signupcross"><i class="fa fa-times"></i></a>
+        <h1>enter signup details</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Name"required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Mobile Number"required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email"required><br>
+            <input type="text" id="fname" name="fname" placeholder="Set Password"required><br>
+            <input type="text" id="lname" name="lname" placeholder="Confirm Password" required><br><br>
+            <div class="signupbottom">
+                <div class="col-md-4" style="padding-left:0;background-color: transparent;">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                </div>
+                <div class="col-md-8">
+                    <input type="button" class="submit" value="Login">
+                    <input type="submit" class="submit" value="Signup">
+                </div>
+            </div>
+          </form>
+    </div>
 
 
     <script>
-        $(Document).ready(function(){
-            var progress = 4;
+        $(document).ready(function(){
+            $(".loginbtn").click(function(){
+                $(".container-fluid").css("filter","blur(3px)");
+                $(".logincard").css("display","block");
+                $("body").css("overflow","hidden");
+            })
+            $(".logincross").click(function(){
+                $(".container-fluid").css("filter","blur(0px)");
+                $(".logincard").css("display","none");
+                $("body").css("overflow","visible");
+            })
+
+
+
+            $(".forgot").click(function(){
+                $(".container-fluid").css("filter","blur(3px)");
+                $(".logincard").css("display","none");
+                $(".forgotcard").css("display","block");
+                $("body").css("overflow","hidden");
+            })
+            $(".forgotcross").click(function(){
+                $(".container-fluid").css("filter","blur(0px)");
+                $(".forgotcard").css("display","none");
+                $("body").css("overflow","visible");
+            })
+
+
+
+            $(".signupbtn").click(function(){
+                $(".container-fluid").css("filter","blur(3px)");
+                $(".signupcard").css("display","block");
+                $("body").css("overflow","hidden");
+            })
+            $(".signupcross").click(function(){
+                $(".container-fluid").css("filter","blur(0px)");
+                $(".signupcard").css("display","none");
+                $("body").css("overflow","visible");
+            })
+
+            var progress = 1;
             switch(progress){
                 case 1:
                     $(".progress-bar").css("width","25%");
@@ -274,8 +373,10 @@
                     $(".progress").text("No Query Found");
                     $(".progress").css("padding-left", "40%");
                     break;
-            }
-        })
+            } 
+        }
+    )
+
     </script>
 </body>
 </html>

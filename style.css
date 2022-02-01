@@ -24,6 +24,23 @@
     z-index: 10;
     transition: all 0.5s;
 }
+#chk
+{
+    opacity: 0;
+    z-index: -10;
+}
+#chk:checked ~.nav1
+{
+    display: block;
+}
+.container-fluid .navbar .nav1 label
+{
+    position: absolute;
+    right: 20px;
+    line-height: 100px;
+    font-size: 30px;
+    display: none;
+}
 .container-fluid .chatbot .chat:hover
 {
     width: 10%;
@@ -55,6 +72,10 @@
 {
     font-weight: 1000;
     font-size: 17px;
+}
+.container-fluid .navbar .nav2
+{
+    width: 50%;
 }
 .container-fluid .navbar .nav2 ul li a
 {
@@ -363,4 +384,488 @@
 .fa-twitter:hover
 {
     font-size: 100px;
+}
+
+.logincard
+{
+    position: fixed;
+    top: 100px;
+    left: 37%;
+    background-image: linear-gradient(to bottom right,#535353 0%,#535353 40%,#757575 41%,#757575 60%,#535353 61%,#535353 100%);
+    height: 400px;
+    width: 26%;
+    border-radius: 10px;
+    display: none;
+    box-shadow:5px 5px 20px #000000;
+}
+.logincard .loginavtar
+{
+    border-radius: 50%;
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top:-50px;
+}
+.logincard .logincross
+{
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: -45px;
+}
+.logincard .logincross:hover
+{
+    color: gold;
+}
+.logincard h1
+{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    color: #8096df;
+
+}
+.logincard form
+{
+    margin: 40px;
+    text-align: center;
+}
+.logincard form #fname
+{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid white;
+    color: white;
+    padding: 5px;
+}
+.logincard form #fname:focus
+{
+    outline: none;
+}
+.logincard form #fname::placeholder
+{
+    color: white;
+}
+.logincard form #lname
+{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid white;
+    color: white;
+    padding: 5px;
+}
+.logincard form #lname:focus
+{
+    outline: none;
+}
+.logincard form #lname::placeholder
+{
+    color: white;
+}
+.logincard form .loginbottom
+{
+    display: flex;
+}
+.logincard form .loginbottom .col-md-6
+{
+    padding: 0;
+    display: block;
+}
+.logincard form .loginbottom .col-md-6 .icons
+{
+    float: left;
+    display: flex;
+    margin-bottom: 10px;
+}
+.logincard form .loginbottom .col-md-6 .icons .google
+{
+    background-color: white;
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 35px;
+  }
+.fa-facebook-f
+{
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+}
+.logincard form .loginbottom .col-md-6 .forgot
+{
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-align: left;
+}
+.logincard form .loginbottom .submit
+{
+    padding: 3px 15px;
+    float:right;
+    background-color: #8096df;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    color: white;
+}
+.logincard form .loginbottom .submit:hover
+{
+    color: #8096df;
+    background-color: transparent;
+    border: 2px solid #8096df;
+}
+
+/* forgot password */
+
+.forgotcard
+{
+    position: fixed;
+    top: 100px;
+    left: 37%;
+    background-image: linear-gradient(to bottom right,#535353 0%,#535353 40%,#757575 41%,#757575 60%,#535353 61%,#535353 100%);
+    width: 26%;
+    border-radius: 10px;
+    display: none;
+    box-shadow:5px 5px 20px #000000;
+}
+.forgotcard .forgotcross
+{
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.forgotcard h1
+{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 20px ;
+    margin-top: 40px;
+    color: #8096df;
+
+}
+.forgotcard form
+{
+    margin: 40px;
+    text-align: center;
+}
+.forgotcard form #email
+{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid white;
+    color: white;
+    padding: 5px;
+}
+.forgotcard form #email:focus
+{
+    outline: none;
+}
+.forgotcard form #email::placeholder
+{
+    color: white;
+}
+
+.forgotcard form .submit
+{
+    padding: 3px 15px;
+    float:right;
+    background-color: #8096df;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* signup */
+
+.signupcard
+{
+    position: fixed;
+    top: 50px;
+    left: 37%;
+    background-image: linear-gradient(to bottom right,#535353 0%,#535353 40%,#757575 41%,#757575 60%,#535353 61%,#535353 100%);
+    /* height: 400px; */
+    width: 26%;
+    border-radius: 10px;
+    display: none;
+    box-shadow:5px 5px 20px #000000;
+}
+.signupcard .signupavtar
+{
+    border-radius: 50%;
+    width: 30%;
+    margin: auto;
+    display: block;
+    margin-top:-50px;
+}
+.signupcard .signupcross
+{
+    font-size: 20px;
+    color: white;
+    float: right;
+    margin-right: 20px;
+    margin-top: -45px;
+}
+.signupcard .signupcross:hover
+{
+    color: gold;
+}
+.signupcard h1
+{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+    color: #8096df;
+    font-weight: bold;
+
+}
+.signupcard form
+{
+    margin: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.signupcard form #fname
+{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid white;
+    color: white;
+    padding: 5px;
+}
+.signupcard form #fname:focus
+{
+    outline: none;
+}
+.signupcard form #fname::placeholder
+{
+    color: white;
+}
+.signupcard form #lname
+{
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: transparent;
+    border: 0;
+    border-bottom:1px solid white;
+    color: white;
+    padding: 5px;
+}
+.signupcard form #lname:focus
+{
+    outline: none;
+}
+.signupcard form #lname::placeholder
+{
+    color: white;
+}
+.signupcard form .signupbottom
+{
+    display: flex;
+}
+.logincard form .loginbottom .col-md-4
+{
+    padding: 0;
+    display: block;
+}
+.signupcard form .signupbottom .col-md-4 .icons
+{
+    float: left;
+    display: flex;
+}
+.signupcard form .signupbottom .col-md-4 .icons .google
+{
+    background-color: white;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    line-height: 35px;
+  }
+.fa-facebook-f
+{
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+}
+.signupcard form .signupbottom .col-md-8
+{
+    display: flex;
+}
+.signupcard form .signupbottom .submit
+{
+    padding: 0px 10px;
+    float:right;
+    background-color: #8096df;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    height: 30px;
+}
+.signupcard form .signupbottom .submit:hover
+{
+    color: #8096df;
+    background-color: transparent;
+    border: 2px solid #8096df;
+}
+@media(max-width:1100px)
+{
+    .logincard
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .logincard .loginavtar
+    {
+        margin-top: 10px;
+        margin: auto;
+    }
+    .logincard .logincross
+    {
+        position: absolute;
+        top:60px;
+        right: 10px;
+    }
+    .logincard .loginbottom .col-md-6 .forgot
+    {
+        float: left;
+    }
+    .forgotcard
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        border-radius: 0;
+        margin: 0;
+    }.forgotcard form
+    {
+        margin-top: 150px;
+    }
+    .forgotcard .forgotcross
+    {
+        position: absolute;
+        top:10px;
+        right: 10px;
+    }
+    .forgotcard form .submit
+    {
+        float:none;
+    }
+    .container-fluid .navbar .nav1
+    {
+        width: 50%;
+        margin: auto;
+    }
+    .container-fluid .navbar .nav1 img
+    {
+        width: 100%;
+        height: 70px;
+        margin-top: 10px;
+    }
+    .container-fluid .navbar
+    {
+        display: block;
+    }
+    .container-fluid .navbar .nav1 p,.container-fluid .navbar .nav1 p span
+    {
+        font-size: 25px;
+    }
+    .container-fluid .navbar .nav2,.container-fluid .navbar .nav3
+    {
+        display: none;
+    }
+    .container-fluid .section1 .row1 .video video
+    {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .container-fluid .section1 .row2 
+    {
+        padding: 0;
+    }
+    .container-fluid .section1 .row2 .button    
+    {
+        margin: auto;
+    }
+    .container-fluid .section2 .row2b .row .col-md-3 .card
+    {
+        margin: auto;
+    }
+    .container-fluid .section3 .row .col-md-3 .card
+    {
+        margin: auto;
+    }
+    .container-fluid .section-4 .row div.col-md-4
+    {
+        padding: 30px;
+    }
+    .container-fluid .chatbot .chat
+{
+    width: 20%;
+    bottom: 20px;
+    right: -15px;
+    transition: all 0.5s;
+}
+.container-fluid .chatbot .chat:hover
+{
+    width: 25%;
+}
+
+.container-fluid .navbar .nav1 label
+{
+    display: block;
+}
+
 }
