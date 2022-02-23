@@ -6,8 +6,26 @@ function bot() {
         x.css('display', 'none');
     }
 }
+$(".button").click(function SubForm() {
+    $.ajax({
+        url: 'https://api.apispreadsheets.com/data/wqHz21sWfMGFjPoQ/',
+        type: 'post',
+        data: $("#myForm").serializeArray(),
+        success: function () {
+            alert("Query Submitted Successfully");
+            $(".container-fluid").css("filter", "blur(0px)");
+            $(".form").css("display", "none");
+            $("body").css("overflow", "visible");
+        },
+        error: function () {
+            alert("There is an issue try again later");
+            $(".container-fluid").css("filter", "blur(0px)");
+            $(".form").css("display", "none");
+            $("body").css("overflow", "visible");
+        }
+    });
 
-
+})
 $(".loginbtn").click(function () {
     $(".container-fluid").css("filter", "blur(3px)");
     $(".logincard").css("display", "block");
@@ -20,11 +38,11 @@ $(".logincross").click(function () {
 })
 
 $(".formbtn").click(function () {
-    var category = this.text;
+    var category = $(this).text();
     $(".container-fluid").css("filter", "blur(3px)");
     $(".form").css("display", "block");
     $("body").css("overflow", "hidden");
-    $("#category").text = category;
+    $("#category").val(category);
 })
 $(".formcross").click(function () {
     $(".container-fluid").css("filter", "blur(0px)");

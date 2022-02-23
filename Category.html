@@ -196,6 +196,7 @@
             border-bottom: 1px solid white;
             color: white;
             padding: 5px;
+            text-transform: capitalize;
         }
 
         .form #category:focus {
@@ -416,20 +417,27 @@
     <div class="form">
         <h1>Query form</h1>
         <a href="#" class="formcross"><i class="fa fa-times"></i></a>
-        <form action="#">
+        <form id="myForm">
             <label for="">Category</label>
             <input list="categorys" name="category" id="category">
             <datalist id="categorys">
                 <option value="App Development">
-                <option value="Firefox">
-                <option value="Chrome">
-                <option value="Opera">
-                <option value="Safari">
+                <option value="Internet Of Things">
+                <option value="Web Development">
+                <option value="UI/UX">
+                <option value="Grapic Design">
+                <option value="Machine Learning">
+                <option value="Software Issues">
+                <option value="3D/2D Design Analysis">
+                <option value="3D Design">
+                <option value="Master Cam">
+                <option value="VMC">
+                <option value="3D Router">
             </datalist><br>
-            <input type="text" class="category" placeholder="Email"><br>
+            <input type="text" class="category" name="email" placeholder="Your Email"  autocomplete="off"><br>
             <label for="Query">query</label><br>
-            <textarea name="" id=""></textarea><br>
-            <input type="button" value="Submit" class="button">
+            <textarea name="query" id="query" ></textarea><br>
+            <input type="submit" value="Submit" class="button">
         </form>
     </div>
 
