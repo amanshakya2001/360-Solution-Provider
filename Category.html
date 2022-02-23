@@ -176,7 +176,7 @@
 
         .form h1 {
             text-align: center;
-            color: white;
+            color: #8096df;
             font-size: 30px;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -185,6 +185,7 @@
         .form label {
             text-transform: uppercase;
             color: white;
+            line-height: 40px;
         }
 
         .form #category {
@@ -239,9 +240,21 @@
             outline: none;
         }
 
-        .form .button {
+        .form .formbtn {
             padding: 5px 20px;
             float: right;
+            background-color: #8096df;
+            border-radius: 5px;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            color: white;
+            font-size: 15px;
+        }
+
+        .form .formbtn:hover {
+            color: #8096df;
+            background-color: transparent;
+            border: 2px solid #8096df;
         }
 
         .form .formcross {
@@ -434,10 +447,10 @@
                 <option value="VMC">
                 <option value="3D Router">
             </datalist><br>
-            <input type="text" class="category" name="email" placeholder="Your Email"  autocomplete="off"><br>
+            <input type="text" class="category" name="email" placeholder="Your Email" autocomplete="off"><br>
             <label for="Query">query</label><br>
-            <textarea name="query" id="query" ></textarea><br>
-            <input type="button" value="Submit" class="button">
+            <textarea name="query" id="query"></textarea><br>
+            <input type="button" value="Submit" class="formbtn">
         </form>
     </div>
 

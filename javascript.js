@@ -6,7 +6,7 @@ function bot() {
         x.css('display', 'none');
     }
 }
-$(".button").click(function SubForm() {
+$(".formbtn").click(function SubForm() {
     $.ajax({
         url: 'https://api.apispreadsheets.com/data/wqHz21sWfMGFjPoQ/',
         type: 'post',
