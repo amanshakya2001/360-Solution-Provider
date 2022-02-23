@@ -43,7 +43,7 @@
 }
 .container-fluid .chatbot .chat:hover
 {
-    width: 10%;
+    width: 9%;
 }
 .image
 {
@@ -134,12 +134,15 @@
 
 .container-fluid .section1 .row1 .video
 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .container-fluid .section1 .row1 .text p
 {
     padding: 50px 50px 10px 50px;
     text-align: justify ;
+    font-size: 23px;
+    font-style: italic;
+    font-variant: small-caps;
 }
 .container-fluid .section1 .row2 
 {
@@ -168,10 +171,10 @@
 {
     text-align: center;
 }
-.container-fluid .section2 .row2a .col-md-3 i:hover
+/* .container-fluid .section2 .row2a .col-md-3 i:hover
 {
     color: black;
-}
+} */
 .container-fluid .section2 .row2a .col-md-3 i
 {
     font-size: 22px;
@@ -755,6 +758,112 @@
     color: #8096df;
     background-color: transparent;
     border: 2px solid #8096df;
+}
+.chatscreen
+{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 25%;
+    height: 70vh;
+    background-color:rgb(202, 207, 248);
+    padding: 20px;
+    border-radius: 10px;  
+    display: none;
+}
+.chatscreen h1
+{
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color:#5e57e3
+}
+.chatscreen hr
+{
+    border: 1px solid #5e57e3;
+}
+.chatscreen p
+{
+    color: #5e57e3;
+    text-align: center;
+    text-transform: uppercase;
+}
+.chatscreen .msg_sec
+{
+    padding: 5px;
+    height: 50vh;
+    overflow-x: hidden;
+    overflow-y:scroll; 
+    scroll-behavior: smooth;
+    scrollbar-width:none;
+}
+.chatscreen .msg_sec::-webkit-scrollbar {
+    display: none;
+}
+.chatscreen .msg_sec {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.chatscreen .user_chat
+{
+    background-color: #5e57e3;
+    width: 60%;
+    border-radius: 10px 10px 10px 0px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.chatscreen .bot_chat
+{
+    margin-bottom: 10px;
+    background-color: white;
+    width: 60%;
+    border-radius: 10px 10px 0px 10px;
+    margin-left: 40%;
+    padding: 5px;
+}
+.chatscreen .user_chat p
+{
+    color: white;
+    font-size: 10px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.chatscreen .bot_chat p
+{
+    color: #5e57e3;
+    font-size: 10px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+.chatscreen form
+{
+    position: fixed;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chatscreen form input
+{
+    padding: 2px;
+    margin-right: 2px;
+    border: 1px solid#5e57e3;
+    border-radius: 10px;
+}
+.chatscreen form .btn
+{
+    padding: 2px 10px;
+    background-color: #5e57e3;
+    color: white;
+    border: 2px solid transparent;
+}
+.chatscreen form .btn:hover
+{
+    color: #5e57e3;
+    border: 2px solid #5e57e3;
+    background-color: white;
+
 }
 @media(max-width:1100px)
 {

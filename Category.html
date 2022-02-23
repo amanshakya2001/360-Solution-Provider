@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,34 @@
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        .row 
-        {
+        .row {
             padding: 20px;
             width: 100%;
             margin-bottom: 150px;
             height: 440px;
         }
-        .computerdiv
-        {
+
+        .computerdiv {
             width: 30%;
             height: 440px;
             padding-left: 40px;
         }
-        .row .computerdiv .computer
-        {
+
+        .row .computerdiv .computer {
             width: 100%;
             margin: 20px;
             margin-right: 0;
         }
-        .row .computerdiv h1
-        {
+
+        .row .computerdiv h1 {
             font-weight: bold;
             text-transform: uppercase;
             font-size: 25px;
             text-align: center;
         }
-        .row .layout
-        {
-            
+
+        .row .layout {
+
             margin-left: 0;
             width: 62%;
             height: 440px;
@@ -45,15 +45,15 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             position: relative;
-            
+
         }
-        .row .layout .elementodd
-        {
+
+        .row .layout .elementodd {
 
             width: 32%;
             display: block;
             background-color: #5e57e3;
-            padding: 10px 40px ;
+            padding: 10px 40px;
             border-radius: 10px;
             border: 2px solid white;
             margin-left: 34%;
@@ -62,19 +62,19 @@
             text-decoration: none;
             text-align: center;
         }
-        .row .layout .elementodd:hover
-        {
+
+        .row .layout .elementodd:hover {
             background-color: white;
             color: #5e57e3;
             border: 2px solid #5e57e3;
         }
-        .row .layout .elementeven
-        {
+
+        .row .layout .elementeven {
 
             width: 32%;
             display: block;
             background-color: #5e57e3;
-            padding: 10px 40px ;
+            padding: 10px 40px;
             border-radius: 10px;
             border: 2px solid white;
             margin-left: 70%;
@@ -83,34 +83,34 @@
             text-decoration: none;
             text-align: center;
         }
-        .row .layout .elementeven:hover
-        {
+
+        .row .layout .elementeven:hover {
             background-color: white;
             color: #5e57e3;
             border: 2px solid #5e57e3;
         }
-        .mechanicaldiv
-        {
+
+        .mechanicaldiv {
             width: 30%;
             height: 440px;
             padding-right: 40px;
         }
-        .row .mechanicaldiv .mechanical
-        {
+
+        .row .mechanicaldiv .mechanical {
             width: 100%;
             margin-top: 140px;
             margin-left: 0;
         }
-        .row .mechanicaldiv h1
-        {
+
+        .row .mechanicaldiv h1 {
             font-weight: bold;
             text-transform: uppercase;
             font-size: 25px;
             text-align: center;
         }
-        .row .layoutodd
-        {
-            
+
+        .row .layoutodd {
+
             margin-left: 70px;
             width: 62%;
             height: 440px;
@@ -118,15 +118,15 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             position: relative;
-            
+
         }
-        .row .layoutodd .elementodd
-        {
+
+        .row .layoutodd .elementodd {
 
             width: 32%;
             display: block;
             background-color: #5e57e3;
-            padding: 10px 40px ;
+            padding: 10px 40px;
             border-radius: 10px;
             border: 2px solid white;
             margin-left: 34%;
@@ -135,18 +135,18 @@
             text-decoration: none;
             text-align: center;
         }
-        .row .layoutodd .elementodd:hover
-        {
+
+        .row .layoutodd .elementodd:hover {
             background-color: white;
             color: #5e57e3;
             border: 2px solid #5e57e3;
         }
-        .row .layoutodd .elementeven
-        {
+
+        .row .layoutodd .elementeven {
             width: 32%;
             display: block;
             background-color: #5e57e3;
-            padding: 10px 40px ;
+            padding: 10px 40px;
             border-radius: 10px;
             border: 2px solid white;
             margin-left: 0%;
@@ -155,20 +155,109 @@
             text-decoration: none;
             text-align: center;
         }
-        .row .layoutodd .elementeven:hover
-        {
+
+        .row .layoutodd .elementeven:hover {
             background-color: white;
             color: #5e57e3;
             border: 2px solid #5e57e3;
         }
-       
+
+        .form {
+            width: 36%;
+            position: fixed;
+            top: 90px;
+            left: 32%;
+            background-image: linear-gradient(to bottom right, #535353 0%, #535353 40%, #757575 41%, #757575 60%, #535353 61%, #535353 100%);
+            border-radius: 10px;
+            box-shadow: 5px 5px 20px #000000;
+            padding: 20px 30px;
+            display: none;
+        }
+
+        .form h1 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .form label {
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .form #category {
+            width: 70%;
+            margin-bottom: 20px;
+            float: right;
+            background-color: transparent;
+            border: 0px;
+            border-bottom: 1px solid white;
+            color: white;
+            padding: 5px;
+        }
+
+        .form #category:focus {
+            outline: none;
+        }
+
+        .form .category {
+            width: 100%;
+            margin-bottom: 20px;
+            float: right;
+            background-color: transparent;
+            border: 0px;
+            border-bottom: 1px solid white;
+            color: white;
+            padding: 5px;
+        }
+
+        .form .category:focus {
+            outline: none;
+        }
+
+        .form .category::placeholder {
+            color: white;
+        }
+
+        .form textarea {
+            width: 100%;
+            min-height: 200px;
+            max-height: 200px;
+            margin-bottom: 20px;
+            float: right;
+            background-color: transparent;
+            border: 0px;
+            border-bottom: 1px solid white;
+            color: white;
+            padding: 5px;
+        }
+
+        .form textarea:focus {
+            outline: none;
+        }
+
+        .form .button {
+            padding: 5px 20px;
+            float: right;
+        }
+
+        .form .formcross {
+            font-size: 20px;
+            color: white;
+            float: right;
+            margin-right: 20px;
+            margin-top: -45px;
+        }
     </style>
     <title>Category Page</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="chatbot">
-            <img src="./assest/chatbot.png" class="chat" alt="">
+            <img src="./assest/chatbot.png" class="chat" onclick="bot()" alt="">
         </div>
 
         <!-- navbar -->
@@ -188,8 +277,9 @@
             </div>
             <div class="nav3 w-25">
                 <ul class="nav navbar">
-                    <li class="navbar-item"><a href="#">Login<i class="fa fa-angle-right"></i></a></li>
-                    <li class="navbar-item purple"><a href="#">Sign up<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item"><a href="#" class="loginbtn">Login<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item purple"><a href="#" class="signupbtn">Sign up<i
+                                class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -201,13 +291,13 @@
                 <h1>computer services</h1>
             </div>
             <div class="layout">
-                <a href="#" class="elementodd" style="margin-bottom: 3px;">app development</a>
-                <a href="#" class="elementeven" style="margin-bottom:37px;">internet of things</a>
-                <a href="#" class="elementodd" style="margin-bottom: 13px;">web development</a>
-                <a href="#" class="elementeven" style="margin-bottom: 30px;">ui/ux</a>
-                <a href="#" class="elementodd" style="margin-bottom: 10px;">Grapic design</a>
-                <a href="#" class="elementeven" style="margin-bottom: 20px;"> machine learning</a>
-                <a href="#" class="elementodd mb-0" style="margin-bottom: 0px;">software issues</a>
+                <a href="#" class="elementodd formbtn" style="margin-bottom: 3px;">app development</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom:37px;">internet of things</a>
+                <a href="#" class="elementodd formbtn" style="margin-bottom: 13px;">web development</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom: 30px;">ui/ux</a>
+                <a href="#" class="elementodd formbtn" style="margin-bottom: 10px;">Grapic design</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom: 20px;"> machine learning</a>
+                <a href="#" class="elementodd mb-0 formbtn" style="margin-bottom: 0px;">software issues</a>
             </div>
         </div>
 
@@ -215,13 +305,13 @@
         <!-- Mechanical Services -->
         <div class="row">
             <div class="layoutodd">
-                <a href="#" class="elementodd w-50" style="margin-bottom:14px">3D and 2D Design Analysis</a>
-                <a href="#" class="elementeven"style="margin-bottom:10px">3D Design</a>
-                <a href="#" class="elementodd"style="margin-bottom:30px">Master CAM</a>
-                <a href="#" class="elementeven"style="margin-bottom:14px">VMC</a>
-                <a href="#" class="elementodd"style="margin-bottom:40px">3D Router</a>
-                <a href="#" class="elementeven"style="margin-bottom:7px">Panchure jodna</a>
-                <a href="#" class="elementodd mb-0">Baki saare kaam</a>
+                <a href="#" class="elementodd w-50 formbtn" style="margin-bottom:14px">3D and 2D Design Analysis</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom:10px">3D Design</a>
+                <a href="#" class="elementodd formbtn" style="margin-bottom:30px">Master CAM</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom:14px">VMC</a>
+                <a href="#" class="elementodd formbtn" style="margin-bottom:40px">3D Router</a>
+                <a href="#" class="elementeven formbtn" style="margin-bottom:7px">Panchure jodna</a>
+                <a href="#" class="elementodd mb-0 formbtn">Baki saare kaam</a>
             </div>
             <div class="mechanicaldiv">
                 <img class="mechanical" src="./assest/egngineeringdesign.jpg" alt="">
@@ -229,5 +319,122 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- login card -->
+    <div class="logincard">
+        <img src="./assest/avtarlogin.png" class="loginavtar" alt="">
+        <a href="#" class="logincross"><i class="fa fa-times"></i></a>
+        <h1>enter your credentials</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Password" required><br><br>
+            <div class="loginbottom">
+                <div class="col-md-6">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                    <a href="#" class="forgot">forgot password?</a>
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- forgot password -->
+    <div class="forgotcard">
+        <a href="#" class="forgotcross"><i class="fa fa-times"></i></a>
+        <h1>forgot password</h1>
+        <form>
+            <input type="text" id="email" name="email" placeholder="Enter Email" required><br>
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- signup -->
+    <div class="signupcard">
+        <img src="./assest/avtarlogin.png" class="signupavtar" alt="">
+        <a href="#" class="signupcross"><i class="fa fa-times"></i></a>
+        <h1>enter signup details</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Mobile Number" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Set Password" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Confirm Password" required><br><br>
+            <div class="signupbottom">
+                <div class="col-md-4" style="padding-left:0;background-color: transparent;">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                </div>
+                <div class="col-md-8">
+                    <input type="button" class="submit" value="Login">
+                    <input type="submit" class="submit" value="Signup">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="chatscreen">
+        <h1>welcome to live chat</h1>
+        <hr>
+        <p>monday,1:27pm</p>
+        <div class="msg_sec">
+            <div class="bot_chat">
+                <p>Welcome to 360 Solution Provider Chat bot!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+            <div class="bot_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+            <div class="bot_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+        </div>
+        <form action="">
+            <input type="text">
+            <input class="btn" type="button" value="send">
+        </form>
+    </div>
+
+
+    <div class="form">
+        <h1>Query form</h1>
+        <a href="#" class="formcross"><i class="fa fa-times"></i></a>
+        <form action="#">
+            <label for="">Category</label>
+            <input list="categorys" name="category" id="category">
+            <datalist id="categorys">
+                <option value="App Development">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist><br>
+            <input type="text" class="category" placeholder="Email"><br>
+            <label for="Query">query</label><br>
+            <textarea name="" id=""></textarea><br>
+            <input type="button" value="Submit" class="button">
+        </form>
+    </div>
+
+    <script src="./javascript.js">
+    </script>
 </body>
+
 </html>

@@ -9,6 +9,7 @@
     <script src="./js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="./fontawesome/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <script src="./index.html"></script>
     <style>
         .container-fluid .section-1 {
             padding: 30px;
@@ -18,6 +19,7 @@
             background-repeat: no-repeat;
             background-size: 100% 100%;
             transition: all 0.5s;
+            margin-bottom: 30px;
         }
 
         .container-fluid .section-1:hover {
@@ -50,6 +52,7 @@
 
         .container-fluid .section-2 .col-md-3 {
             padding: 10px;
+            height: 250px;
         }
 
         .container-fluid .section-2 .col-md-3 p {
@@ -60,9 +63,11 @@
             border: 1px solid black;
             padding: 20px;
             transition: all 0.2s;
+            height: 230px;
         }
 
         .container-fluid .section-2 .col-md-3 .card-text:hover {
+            padding: 18px;
             border: 2px solid #5e57e3;
             box-shadow:
                 inset 0 -3em 3em rgba(0, 0, 0, 0.1),
@@ -106,11 +111,13 @@
             width: 60%;
             border-radius: 50%;
             transition: all 0.5s;
+            margin-bottom: 20px;
         }
         .container-fluid .section-3 .col-md-4 img:hover
         {
             box-shadow: 5px 5px 5px #aaaaaa;
-            width: 70%;
+            width: 61%;
+            margin-bottom: 12px;
         }
 
         .container-fluid .section-3 .col-md-4 p {
@@ -137,14 +144,15 @@
             margin: auto;
             display: block;
             border-radius: 50%;
-            width: 50%;
+            width: 30%;
             margin-bottom: 20px;
             transition: all 0.5s;
         }
         .container-fluid .section-3 .col-md-6 img:hover
         {
             box-shadow: 5px 5px 5px #aaaaaa;
-            width: 60%;
+            width: 31%;
+            margin-bottom: 12px;
         }
 
         .container-fluid .section-3 .col-md-6 p {
@@ -176,7 +184,8 @@
         .container-fluid .section-3 .col-md-4 img:hover
         {
             box-shadow: 5px 5px 5px #aaaaaa;
-            width: 60%;
+            width: 51%;
+            margin-bottom:15px ;
         }
 
         .container-fluid .section-3 .col-md-4 p {
@@ -233,7 +242,7 @@
 <body>
     <div class="container-fluid w-100">
         <div class="chatbot">
-            <img src="./assest/chatbot.png" class="chat" alt="">
+            <img src="./assest/chatbot.png" class="chat" onclick="bot()" alt="">
         </div>
 
         <!-- navbar -->
@@ -253,8 +262,8 @@
             </div>
             <div class="nav3 w-25">
                 <ul class="nav navbar">
-                    <li class="navbar-item"><a href="#">Login<i class="fa fa-angle-right"></i></a></li>
-                    <li class="navbar-item purple"><a href="#">Sign up<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item"><a href="#" class="loginbtn">Login<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item purple"><a href="#" class="signupbtn">Sign up<i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -262,21 +271,14 @@
 
         <div class="section-1">
             <h1>about the company</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto dolores quaerat quidem nesciunt
-                animi error debitis, id doloribus, sint ex assumenda! Qui ea, placeat dolor possimus consequuntur
-                dolores laudantium atque quas reiciendis? Dolorem beatae excepturi aut nemo vero harum, aspernatur
-                explicabo quasi officiis saepe placeat laudantium quisquam? Nisi ad fugit natus consequuntur provident
-                commodi architecto quos sed quibusdam blanditiis, neque amet tempore reiciendis iusto enim ex ducimus
-                soluta ut ullam, iste eaque quae quisquam pariatur? Saepe enim ad beatae illum laboriosam totam,
-                consequuntur itaque dolor consectetur ut deserunt nobis, ullam nihil suscipit impedit porro architecto
-                ratione, eaque vel veniam odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, ducimus
-                voluptatum. Dolore, ad minus pariatur voluptatem magni tempore porro harum repudiandae, omnis voluptate
-                architecto beatae cum incidunt placeat. Eum molestiae placeat laudantium cumque aspernatur natus quo,
-                dolor dolore enim neque illo culpa quisquam? Repellendus, ex. Aperiam quam fugit, sunt ex laboriosam
-                dolorum sapiente, cupiditate, labore repellat corrupti fugiat voluptates explicabo minus nam at. Eaque
-                non commodi, placeat ullam ipsum itaque facere nostrum tempore molestias in deserunt dignissimos
-                consectetur quo nemo quis odit repellat fuga explicabo necessitatibus sed, culpa minus laudantium
-                dolorem quam. Amet doloribus explicabo consequatur corporis reprehenderit nisi error!</p>
+            <p>360 Solution Provider is basically for engineering students. Initially,
+                there were only six branches of engineering, but now engineering is a
+                different world with lots of branches. In college life, only academic study
+                is not enough, skills are needed. Here we provide technical support to
+                our users for their technical learning in areas such as development,
+                training, interns, projects and subjective studies, and many more. We
+                also provide information about new technologies and current
+                industry-related tools and techniques.</p>
         </div>
 
 
@@ -287,44 +289,37 @@
                     <i class="fa fa-lock"></i>
                     <p>be the most trusted</p>
                     <div class="card-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eum, nulla eligendi dolorem
-                            voluptatem aliquid iusto ullam voluptates non cupiditate rerum consequatur placeat
-                            perspiciatis omnis animi id illo laboriosam provident sunt, labore, eius voluptatum ab modi
-                            soluta? Cum sit sequi deserunt harum facilis! Corporis molestias est perferendis natus
-                            reprehenderit hic?</p>
+                        <p>Trust is a great simplifier if the people in the business told the truth 80 to 90
+                            percent of their problem will disappear. So we assure full security to our
+                            clients’ credentials and project details. We never share any data of our clients.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa fa-check"></i>
                     <p>be the easiest to use</p>
                     <div class="card-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eum, nulla eligendi dolorem
-                            voluptatem aliquid iusto ullam voluptates non cupiditate rerum consequatur placeat
-                            perspiciatis omnis animi id illo laboriosam provident sunt, labore, eius voluptatum ab modi
-                            soluta? Cum sit sequi deserunt harum facilis! Corporis molestias est perferendis natus
-                            reprehenderit hic?</p>
+                        <p>The more relaxed you are the better you are with yourself. Our clients'
+                            relaxation is very important for us. We assure our clients to provide the easiest
+                            way to get their solutions.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa fa-clone"></i>
                     <p>be in the perfectionist</p>
                     <div class="card-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eum, nulla eligendi dolorem
-                            voluptatem aliquid iusto ullam voluptates non cupiditate rerum consequatur placeat
-                            perspiciatis omnis animi id illo laboriosam provident sunt, labore, eius voluptatum ab modi
-                            soluta? Cum sit sequi deserunt harum facilis! Corporis molestias est perferendis natus
-                            reprehenderit hic?</p>
+                        <p>Nobody and nothing is perfect in this entire word. But we are making
+                            ourselves more and more perfect with the help of valuable feedback of our
+                            clients so that we can provide solution in a more easy and efficient way to our
+                            clients.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <i class="fa fa-ghost"></i>
                     <p>be creative</p>
                     <div class="card-text">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint eum, nulla eligendi dolorem
-                            voluptatem aliquid iusto ullam voluptates non cupiditate rerum consequatur placeat
-                            perspiciatis omnis animi id illo laboriosam provident sunt, labore, eius voluptatum ab modi
-                            soluta? Cum sit sequi deserunt harum facilis! Corporis molestias est perferendis natus
-                            reprehenderit hic?</p>
+                        <p>Imagination is the beginning of creation. You imagine what you desire, you will
+                            what you imagine, and at last, you create what you will and we will help you to
+                            complete your will.</p>
                     </div>
                 </div>
             </div>
@@ -334,89 +329,90 @@
             <h1>our team</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="./assest/avtar.png" alt="Boss">
+                    <img src="./assest/1.jpg" alt="Boss">
                     <p>Vikas gola</p>
                     <p>founder</p>
                 </div>
                 <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis reiciendis repudiandae
-                        necessitatibus eaque eveniet porro vitae fugiat maiores inventore debitis nobis, commodi
-                        blanditiis tempore rerum a quis est esse quaerat excepturi impedit non molestiae? Dicta modi
-                        accusamus cumque nisi, veniam aspernatur sed necessitatibus nesciunt provident ducimus culpa
-                        ullam tempora voluptatem enim doloribus assumenda impedit facilis repellat aliquam atque
-                        corporis nobis iste, debitis exercitationem. Hic, autem? Nulla natus reiciendis nostrum
-                        voluptates laudantium perferendis nemo officia voluptas animi voluptatibus accusamus est, earum,
-                        beatae iusto itaque? Ex iste modi distinctio laborum laboriosam quaerat illo aliquam blanditiis
-                        sapiente, quod temporibus, amet consequuntur minima inventore?</p>
+                    <p>Founder of 360 Solution provider, currently a B.tech. student of the
+                        Mechanical Branch in GLA University.
+                        I am a quick learner, a good observer, so simply find out problems around me
+                        and always try to solve that. I have a patent on multi-paddle vehicles, aresearcher and coordinator in my university kabaddi club. I also write review
+                        papers on the topic of nanofluids. I aim to provide tools for social benefits.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-6">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/2.jpg" alt="">
                     <p>aman shakya</p>
                     <p>co-founder & c.t.o</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">I am Co-founder and Chief Technical Officer of 360 Solution provider,
+                        currently pursuing b.tech. from computer science at GLA University.
+                        I am a quick learner and a good problem solver. Always ready to explore
+                        new things. I stay consistent with my work and worship it and grow
+                        myself as a computer science engineer with multiple technical skills.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/6.jpg" alt="">
                     <p>astha verma</p>
                     <p>co-founder</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">I am co-founder of 360 Solution provider, currently a B.tech.
+                        student of computer science and engineering at GLA University.
+                        Always in a learning phase and interested in new emerging technologies,
+                        enjoying the challenges, and ready to give my best shot. My goal is to see a
+                        better version of myself with each passing hour.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-4">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/5.jpeg" alt="">
                     <p>animesh dixit</p>
                     <p>senior designer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">I am a Senior Graphic designer of 360° Solution Provider, currently designing
+                        the dream in the 3rd year of B.tech from computer science at GLA University.
+                        Making things better by imagining and designing the thoughts virtually and by
+                        implementing them in reality. Great coordinator, love to make everything
+                        attractive. Coffee Lover, trying to have a Careers cup of coffee with buiscuits
+                        of my hobby.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/3.jpg" alt="">
                     <p>tarun gupta</p>
                     <p>head designer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">I am the Head designer of 360 Solution provider, currently a
+                        B.tech third-year student of computer Science at GLA University.
+                        I always learn new stuff for making a new design and having a good skill
+                        in video editing. I am clear with the view that we should design to
+                        support user goals. There is only one thing that makes a dream
+                        impossible to achieve: 'The fear of failure.' which I have overcome.</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/4.jpg" alt="">
                     <p>taruwarsh kumar</p>
                     <p>senior developer</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">I am a senior developer of 360 solution provider, currently pursuing
+                        B.tech. from computer science at GLA University.
+                        I am always ready to learn something new and fascinating. Always ready
+                        to build something new and efficient. The only thing I believe in is
+                        perseverance and hard work that is all you need to reach your goals or
+                        better say 'AIM'.</p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-4">
-                    <img src="./assest/avtar.png" alt="">
+                    <img src="./assest/7.jpg" alt="">
                     <p>nazia farheen</p>
                     <p>social media handler</p>
-                    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit nobis
-                        quas, itaque quaerat, similique illo dolore iusto ea aut labore animi optio mollitia fugiat
-                        sint. Doloremque quia, veniam impedit maxime, possimus nemo reprehenderit inventore eaque iste
-                        ducimus debitis culpa. Sunt ducimus maiores natus aspernatur eum quisquam cumque alias
-                        voluptate?</p>
+                    <p class="about">Content Head in 360 Solution Provider, currently in a prefinal year in my
+                        computer science and engineering at GLA University.
+                        Maths lover, an article writer especially on Artificial intelligence and Machine
+                        Learning based tools. Currently working on Data Science. Want to automate
+                        everything around us. A good motivator, helper, optimistic, quick learner,
+                        researcher, jubilant. I want to do everything that makes my country perfectly
+                        developed in all aspects.</p>
                 </div>
                 <div class="col-md-4">
                     <img src="./assest/avtar.png" alt="">
@@ -487,6 +483,98 @@
 
         </div>
     </div>
+
+
+       <!-- login card -->
+       <div class="logincard">
+        <img src="./assest/avtarlogin.png" class="loginavtar" alt="">
+        <a href="#" class="logincross"><i class="fa fa-times"></i></a>
+        <h1>enter your credentials</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Password" required><br><br>
+            <div class="loginbottom">
+                <div class="col-md-6">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                    <a href="#" class="forgot">forgot password?</a>
+                </div>
+                <div class="col-md-6">
+                    <input type="submit" class="submit" value="Login">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- forgot password -->
+    <div class="forgotcard">
+        <a href="#" class="forgotcross"><i class="fa fa-times"></i></a>
+        <h1>forgot password</h1>
+        <form>
+            <input type="text" id="email" name="email" placeholder="Enter Email" required><br>
+            <input type="submit" class="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- signup -->
+    <div class="signupcard">
+        <img src="./assest/avtarlogin.png" class="signupavtar" alt="">
+        <a href="#" class="signupcross"><i class="fa fa-times"></i></a>
+        <h1>enter signup details</h1>
+        <form>
+            <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Mobile Number" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+            <input type="text" id="fname" name="fname" placeholder="Set Password" required><br>
+            <input type="text" id="lname" name="lname" placeholder="Confirm Password" required><br><br>
+            <div class="signupbottom">
+                <div class="col-md-4" style="padding-left:0;background-color: transparent;">
+                    <div class="icons">
+                        <a href="#" class="google"><i class="fab fa-google"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div><br><br>
+                </div>
+                <div class="col-md-8">
+                    <input type="button" class="submit" value="Login">
+                    <input type="submit" class="submit" value="Signup">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="chatscreen">
+        <h1>welcome to live chat</h1>
+        <hr>
+        <p>monday,1:27pm</p>
+        <div class="msg_sec">
+            <div class="bot_chat">
+                <p>Welcome to 360 Solution Provider Chat bot!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+            <div class="bot_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+            <div class="bot_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+            </div>
+            <div class="user_chat">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+            </div>
+        </div>
+        <form action="">
+            <input type="text">
+            <input class="btn" type="button" value="send">
+        </form>
+    </div>
+    <script src="./javascript.js"></script>
 </body>
 
 </html>
