@@ -766,7 +766,8 @@
     right: 50px;
     width: 25%;
     height: 70vh;
-    background-color:rgb(202, 207, 248);
+    background-color:transparent;
+    border: 2px solid #5e57e3;
     padding: 20px;
     border-radius: 10px;  
     display: none;

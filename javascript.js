@@ -6,24 +6,30 @@ function bot() {
         x.css('display', 'none');
     }
 }
-$(".formbtn").click(function SubForm() {
-    $.ajax({
-        url: 'https://api.apispreadsheets.com/data/wqHz21sWfMGFjPoQ/',
-        type: 'post',
-        data: $("#myForm").serializeArray(),
-        success: function () {
-            alert("Query Submitted Successfully");
-            $(".container-fluid").css("filter", "blur(0px)");
-            $(".form").css("display", "none");
-            $("body").css("overflow", "visible");
-        },
-        error: function () {
-            alert("There is an issue try again later");
-            $(".container-fluid").css("filter", "blur(0px)");
-            $(".form").css("display", "none");
-            $("body").css("overflow", "visible");
-        }
-    });
+$(".submitformbtn").click(function SubForm() {
+    if ($(".category").val() == "" || $("#category").val() == "" || $("#query").val() == "") {
+        alert("Fill all the values in form");
+    }
+    else {
+        $(".submitformbtn").prop('disabled', true);
+        $.ajax({
+            url: 'https://api.apispreadsheets.com/data/wqHz21sWfMGFjPoQ/',
+            type: 'post',
+            data: $("#myForm").serializeArray(),
+            success: function () {
+                alert("Query Submitted Successfully");
+                $(".container-fluid").css("filter", "blur(0px)");
+                $(".form").css("display", "none");
+                $("body").css("overflow", "visible");
+            },
+            error: function () {
+                alert("There is an issue try again later");
+                $(".container-fluid").css("filter", "blur(0px)");
+                $(".form").css("display", "none");
+                $("body").css("overflow", "visible");
+            }
+        });
+    }
 
 })
 $(".loginbtn").click(function () {

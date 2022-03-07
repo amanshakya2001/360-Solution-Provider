@@ -15,20 +15,21 @@
     width: 100%;
     margin: 0;
     padding: 80px;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assest/review_bg.jpg);
-    background-repeat: no-repeat; 
+    /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assest/review_bg.jpg); */
+    /* background-repeat: no-repeat;  */
     background-size: 100% 100%; 
+    text-align: center;
   }
 .row2a .col
 {
-    padding-left: 200px;
+    width: 100%;
 }
 .row2a .col h1
 {
 
     text-transform:uppercase;
     margin-bottom: 25px;
-    color:white;
+    color:black;
     font-size: 25px;
 }
 .row2a .col .col-md-3 i
@@ -44,13 +45,17 @@
 .row2a .col .col-md-3 h1
 {
     font-size: 17px; 
-    color:white;
+    color:black;
 }
-.row2a .col form .form-group textarea
+.row2a .col form  textarea
 {
     width:100%;
+    min-height: 100px;
+    max-height: 100px;
     padding: 10px;
+    margin-bottom: 5px;
 }
+
 .row2a .col form .subtn
 {
     padding: 10px 30px;
@@ -139,10 +144,7 @@
                 <div class="col-md-5">
 
                 <form action="#">
-                    <div class="form-group">
-                        <textarea class="form-control" id="exampleFormControlTextarea1" maxlength="5" placeholder="Enter your comment !">
-                        </textarea>
-                    </div>
+                    <textarea name="" id="" rows="5"></textarea><br>
                     <input class="subtn" type="submit">
                 </form>
                 </div>
