@@ -25,6 +25,7 @@
         .container-fluid .videos .videorow
         {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-evenly;
             justify-items: center;
             margin:20px 0px;
@@ -46,6 +47,14 @@
                 0 0 0 2px rgb(255, 255, 255),
                 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
+        }
+        @media(max-width:1100px)
+        {
+            .container-fluid .videos .videorow .boxvideo
+            {
+                width: 100%;
+                margin: 10px;
+            }
         }
     </style>
 </head>
@@ -90,7 +99,7 @@
             <div class="videorow">
                
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -98,7 +107,7 @@
                     </p>
                 </div>
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -106,7 +115,7 @@
                     </p>
                 </div>
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -118,7 +127,7 @@
             </div>
             <div class="videorow">
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -126,7 +135,7 @@
                     </p>
                 </div>
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -134,7 +143,7 @@
                     </p>
                 </div>
                 <div class="boxvideo">
-                    <video width="100%">
+                    <video width="100%" controls>
                         <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
