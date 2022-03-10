@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+    <style>
+        .container-fluid .videos h2
+        {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+        .container-fluid .videos p
+        {
+            margin: 10px 50px;
+            text-align: justify;
+        }
+        .container-fluid .videos .videorow
+        {
+            display: flex;
+            justify-content: space-evenly;
+            justify-items: center;
+            margin:20px 0px;
+        }
+        .container-fluid .videos .videorow .boxvideo
+        {
+            width: 23%;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.2s;
+        }
+
+        .container-fluid .videos .videorow .boxvideo:hover {
+            padding: 9px;
+            border: 2px solid #5e57e3;
+            box-shadow:
+                inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgb(255, 255, 255),
+                0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid w-100">
+        <div class="chatbot">
+            <img src="./assest/chatbot.png" class="chat" onclick="bot()" alt="">
+        </div>
+
+        <!-- navbar -->
+        <div class="navbar navbar-light bg-light w-100">
+            <div class="nav1">
+                <img src="./assest/logo.png" alt="" class="image">
+                <p><span>solution</span> provider</p>
+                <input type="checkbox" name="chk" id="chk">
+                <label for="chk" class="show-btn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+            <div class="nav2">
+                <ul class="nav navbar">
+                    <li class="navbar-item"><a href="./index.html">home</a></li>
+                    <li class="navbar-item"><a href="./Category.html">category</a></li>
+                    <li class="navbar-item"><a href="./Review.html">review</a></li>
+                    <li class="navbar-item"><a href="./AboutUs.html">about us</a></li>
+                    <li class="navbar-item"><a href="./Help.html">help</a></li>
+                </ul>
+            </div>
+            <div class="nav3 w-md-25">
+                <ul class="nav navbar">
+                    <li class="navbar-item"><a href="#" class="loginbtn">Login<i class="fa fa-angle-right"></i></a></li>
+                    <li class="navbar-item purple"><a href="#" class="signupbtn">Sign up<i
+                                class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- our testimonials -->
+        <div class="videos">
+            <h2>our testimonials</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur minus soluta sequi, labore similique reprehenderit quis quaerat officiis quisquam qui illum ducimus numquam ipsam voluptate rerum, expedita quibusdam molestias. Alias explicabo sint dolor accusamus hic. Eligendi officia quibusdam, harum ad ex sed est culpa quod blanditiis hic non voluptatum ipsum?</p>
+            <div class="videorow">
+               
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                
+                
+            </div>
+            <div class="videorow">
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                <div class="boxvideo">
+                    <video width="100%">
+                        <source src="./assest/360SolutionVideo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, praesentium!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum, laudantium!
+                    </p>
+                </div>
+                
+                
+            </div>
+            
+            
+        </div>
+
+        <!-- login screen -->
+        <div class="logincard">
+            <img src="./assest/avtarlogin.png" class="loginavtar" alt="">
+            <a href="#" class="logincross"><i class="fa fa-times"></i></a>
+            <h1>enter your credentials</h1>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+                <input type="text" id="lname" name="lname" placeholder="Password" required><br><br>
+                <div class="loginbottom">
+                    <div class="col-md-6">
+                        <div class="icons">
+                            <a href="#" class="google"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div><br><br>
+                        <a href="#" class="forgot">forgot password?</a>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="submit" class="submit" value="Login">
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <!-- forgot password -->
+        <div class="forgotcard">
+            <a href="#" class="forgotcross"><i class="fa fa-times"></i></a>
+            <h1>forgot password</h1>
+            <form>
+                <input type="text" id="email" name="email" placeholder="Enter Email" required><br>
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </div>
+    
+        <!-- signup -->
+        <div class="signupcard">
+            <img src="./assest/avtarlogin.png" class="signupavtar" alt="">
+            <a href="#" class="signupcross"><i class="fa fa-times"></i></a>
+            <h1>enter signup details</h1>
+            <form>
+                <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter Mobile Number" required><br>
+                <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
+                <input type="text" id="fname" name="fname" placeholder="Set Password" required><br>
+                <input type="text" id="lname" name="lname" placeholder="Confirm Password" required><br><br>
+                <div class="signupbottom">
+                    <div class="col-md-4" style="padding-left:0;background-color: transparent;">
+                        <div class="icons">
+                            <a href="#" class="google"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div><br><br>
+                    </div>
+                    <div class="col-md-8">
+                        <input type="button" class="submit" value="Login">
+                        <input type="submit" class="submit" value="Signup">
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+    
+        <div class="chatscreen">
+            <h1>welcome to live chat</h1>
+            <hr>
+            <p>monday,1:27pm</p>
+            <div class="msg_sec">
+                <div class="bot_chat">
+                    <p>Welcome to 360 Solution Provider Chat bot!</p>
+                </div>
+                <div class="user_chat">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+                </div>
+                <div class="bot_chat">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+                </div>
+                <div class="user_chat">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+                </div>
+                <div class="bot_chat">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
+                </div>
+                <div class="user_chat">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
+                </div>
+            </div>
+            <form action="">
+                <input type="text">
+                <input class="btn" type="button" value="send">
+            </form>
+        </div>
+    
+    
+    
+        <script src="./javascript.js"></script>
+        <script>
+            var video = $("video");
+      
+            // Check if video is ready to play
+            $(video).on('canplay', function () {
+                $(video).mouseenter(function () {
+                    $(this).get(0).play();
+                }).mouseleave(function () {
+                    $(this).get(0).pause();
+                })
+            });
+        </script>
+    </body>
+    
+    </html>
