@@ -24,23 +24,6 @@
     z-index: 10;
     transition: all 0.5s;
 }
-#chk
-{
-    opacity: 0;
-    z-index: -10;
-}
-#chk:checked ~.nav1
-{
-    display: block;
-}
-.container-fluid .navbar .nav1 label
-{
-    position: absolute;
-    right: 20px;
-    line-height: 100px;
-    font-size: 30px;
-    display: none;
-}
 .container-fluid .chatbot .chat:hover
 {
     width: 9%;
@@ -913,6 +896,10 @@
     {
         float:none;
     }
+    .container-fluid .navmain
+    {
+        display: block;
+    }
     .container-fluid .navbar .nav1
     {
         width: 50%;
@@ -920,13 +907,10 @@
     }
     .container-fluid .navbar .nav1 img
     {
-        width: 100%;
+        width: 50%;
         height: 70px;
+        margin: auto;
         margin-top: 10px;
-    }
-    .container-fluid .navbar
-    {
-        display: block;
     }
     .container-fluid .navbar .nav1 p,.container-fluid .navbar .nav1 p span
     {
@@ -934,7 +918,14 @@
     }
     .container-fluid .navbar .nav2,.container-fluid .navbar .nav3
     {
-        display: none;
+        /* display: none; */
+        text-align: center;
+        width: 100%;
+    }
+    .container-fluid .navmain .nav3 nav
+    {
+        display: block;
+        margin: auto;
     }
     .container-fluid .section1 .row1 .video video
     {
