@@ -899,6 +899,7 @@
     .container-fluid .navmain
     {
         display: block;
+        margin-bottom: 20px;
     }
     .container-fluid .navbar .nav1
     {
