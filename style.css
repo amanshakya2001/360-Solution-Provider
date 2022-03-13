@@ -874,6 +874,25 @@
     {
         float: left;
     }
+    .signupcard
+    {
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .signupcard .signupavtar
+    {
+        margin-top: 10px;
+        margin: auto;
+    }
+    .signupcard .signupcross
+    {
+        position: absolute;
+        top:60px;
+        right: 10px;
+    }
     .forgotcard
     {
         width: 100%;
