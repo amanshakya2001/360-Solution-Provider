@@ -32,11 +32,13 @@ $(".submitformbtn").click(function SubForm() {
     }
 
 })
+
 $(".loginbtn").click(function () {
     $(".container-fluid").css("filter", "blur(3px)");
     $(".logincard").css("display", "block");
     $("body").css("overflow", "hidden");
 })
+
 $(".logincross").click(function () {
     $(".container-fluid").css("filter", "blur(0px)");
     $(".logincard").css("display", "none");
@@ -50,6 +52,7 @@ $(".formbtn").click(function () {
     $("body").css("overflow", "hidden");
     $("#category").val(category);
 })
+
 $(".formcross").click(function () {
     $(".container-fluid").css("filter", "blur(0px)");
     $(".form").css("display", "none");
@@ -63,6 +66,7 @@ $(".forgot").click(function () {
     $(".forgotcard").css("display", "block");
     $("body").css("overflow", "hidden");
 })
+
 $(".forgotcross").click(function () {
     $(".container-fluid").css("filter", "blur(0px)");
     $(".forgotcard").css("display", "none");
@@ -76,6 +80,7 @@ $(".signupbtn").click(function () {
     $(".signupcard").css("display", "block");
     $("body").css("overflow", "hidden");
 })
+
 $(".signupcross").click(function () {
     $(".container-fluid").css("filter", "blur(0px)");
     $(".signupcard").css("display", "none");

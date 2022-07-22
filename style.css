@@ -26,7 +26,7 @@
 }
 .container-fluid .chatbot .chat:hover
 {
-    width: 9%;
+    transform: scale(1.2,1.2);
 }
 .image
 {
@@ -359,17 +359,9 @@
     margin: 10px;
     transition: all 0.5s;
 }
-.fa-instagram:hover
+.fa-instagram:hover,.fa-linkedin:hover,.fa-twitter:hover
 {
-    font-size: 100px;
-}
-.fa-linkedin:hover
-{
-    font-size: 100px;
-}
-.fa-twitter:hover
-{
-    font-size: 100px;
+    transform:translateY(-10px);
 }
 
 .logincard
