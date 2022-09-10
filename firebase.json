@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "",
+    "public": "../360SolutionProvider",
     "ignore": [
       "firebase.json",
       "**/.*",
