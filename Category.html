@@ -1,389 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./assest/whitelogo.png" type="image/x-icon">
-    <title>360 Solution Provider | Category Page</title>
-    <style>
-        .row {
-            padding: 20px;
-            width: 100%;
-            display: flex;
-            margin-top: 80px;
-        }
-
-        .computerdiv {
-            width: 50%;
-            padding-left: 20px;
-        }
-
-        .row .computerdiv .computer {
-            width: 100%;
-            display: block;
-            margin: auto;
-        }
-
-        .row .computerdiv h1 {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 25px;
-            text-align: center;
-        }
-
-        .row .layout {
-
-            width: 50%;
-
-        }
-
-        .row .layout .element {
-            width: 50%;
-            display: block;
-            background-color: #5e57e3;
-            padding: 10px 40px;
-            border-radius: 10px;
-            border: 2px solid white;
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: center;
-            margin: auto;
-            margin-bottom: 10px;
-        }
-
-        .row .layout .element:hover {
-            background-color: white;
-            color: #5e57e3;
-            border: 2px solid #5e57e3;
-        }
-
-        .mechanicaldiv {
-            width: 50%;
-            padding: 40px;
-            margin: auto;
-        }
-
-        .row .mechanicaldiv .mechanical {
-            width: 100%;
-            margin: auto;
-        }
-
-        .row .mechanicaldiv h1 {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 25px;
-            text-align: center;
-        }
-
-        .form {
-            width: 36%;
-            position: fixed;
-            top: 90px;
-            left: 32%;
-            background-image: linear-gradient(to bottom right, #535353 0%, #535353 40%, #757575 41%, #757575 60%, #535353 61%, #535353 100%);
-            border-radius: 10px;
-            box-shadow: 5px 5px 20px #000000;
-            padding: 20px 30px;
-            display: none;
-        }
-
-        .form h1 {
-            text-align: center;
-            color: #8096df;
-            font-size: 30px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-
-        .form label {
-            text-transform: uppercase;
-            color: white;
-            line-height: 40px;
-        }
-
-        .form #category {
-            width: 70%;
-            margin-bottom: 20px;
-            float: right;
-            background-color: transparent;
-            border: 0px;
-            border-bottom: 1px solid white;
-            color: white;
-            padding: 5px;
-            text-transform: capitalize;
-        }
-
-        .form #category:focus {
-            outline: none;
-        }
-
-        .form .category {
-            width: 100%;
-            margin-bottom: 20px;
-            float: right;
-            background-color: transparent;
-            border: 0px;
-            border-bottom: 1px solid white;
-            color: white;
-            padding: 5px;
-        }
-
-        .form .category:focus {
-            outline: none;
-        }
-
-        .form .category::placeholder {
-            color: white;
-        }
-
-        .form textarea {
-            width: 100%;
-            min-height: 200px;
-            max-height: 200px;
-            margin-bottom: 20px;
-            float: right;
-            background-color: transparent;
-            border: 0px;
-            border-bottom: 1px solid white;
-            color: white;
-            padding: 5px;
-        }
-
-        .form textarea:focus {
-            outline: none;
-        }
-
-        .form .submitformbtn {
-            padding: 5px 20px;
-            float: right;
-            background-color: #8096df;
-            border-radius: 5px;
-            text-transform: uppercase;
-            border: 2px solid transparent;
-            color: white;
-            font-size: 15px;
-        }
-
-        .form .submitformbtn:hover {
-            color: #8096df;
-            background-color: transparent;
-            border: 2px solid #8096df;
-        }
-
-        .form .formcross {
-            font-size: 20px;
-            color: white;
-            float: right;
-            margin-right: 20px;
-            margin-top: -45px;
-        }
-
-        @media(max-width:1100px) {
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="./assest/whitelogo.png" type="image/x-icon">
+        <title>360 Solution Provider | Category Page</title>
+        <style>
             .row {
-                flex-wrap: wrap;
-                margin-top: 40px;
+                padding: 20px;
+                width: 100%;
+                display: flex;
+                margin-top: 80px;
             }
 
             .computerdiv {
+                width: 50%;
+                padding-left: 20px;
+            }
+
+            .row .computerdiv .computer {
                 width: 100%;
-                padding: 20px;
+                display: block;
+                margin: auto;
+            }
+
+            .row .computerdiv h1 {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 25px;
+                text-align: center;
             }
 
             .row .layout {
 
-                width: 100%;
+                width: 50%;
 
             }
+
             .row .layout .element {
-            width: 90%;
-        }
-        .row .lay2
-        {
-            order: 2;
-        }
-        .mechanicaldiv {
-            width: 100%;
-            margin: auto;
-            order:1;
-        }
-        .form
-        {
-            width: 100%;
-            top: 0;
-            left: 0;
-            height: 100vh;
-        }
-        }
-    </style>
-</head>
+                width: 50%;
+                display: block;
+                background-color: #5e57e3;
+                padding: 10px 40px;
+                border-radius: 10px;
+                border: 2px solid white;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                margin: auto;
+                margin-bottom: 10px;
+            }
 
-<body>
-    <div class="container-fluid">
-        <!-- <div class="chatbot">
-            <img src="./assest/chatbot.png" class="chat" onclick="bot()" alt="">
-        </div> -->
+            .row .layout .element:hover {
+                background-color: white;
+                color: #5e57e3;
+                border: 2px solid #5e57e3;
+            }
 
-        <!-- navbar -->
-        <header class="sticky-top bg-light">
-            <div class="container">
-                <div class="navbar navbar-light navmain">
-                    <div class="nav1">
-                        <img src="./assest/logo.png" alt="headerLogo" class="image">
-                        <p><span>solution</span> provider</p>
+            .mechanicaldiv {
+                width: 50%;
+                padding: 40px;
+                margin: auto;
+            }
+
+            .row .mechanicaldiv .mechanical {
+                width: 100%;
+                margin: auto;
+            }
+
+            .row .mechanicaldiv h1 {
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 25px;
+                text-align: center;
+            }
+
+            .form {
+                width: 36%;
+                position: fixed;
+                top: 90px;
+                left: 32%;
+                background-image: linear-gradient(to bottom right, #535353 0%, #535353 40%, #757575 41%, #757575 60%, #535353 61%, #535353 100%);
+                border-radius: 10px;
+                box-shadow: 5px 5px 20px #000000;
+                padding: 20px 30px;
+                display: none;
+            }
+
+            .form h1 {
+                text-align: center;
+                color: #8096df;
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .form label {
+                text-transform: uppercase;
+                color: white;
+                line-height: 40px;
+            }
+
+            .form #category {
+                width: 70%;
+                margin-bottom: 20px;
+                float: right;
+                background-color: transparent;
+                border: 0px;
+                border-bottom: 1px solid white;
+                color: white;
+                padding: 5px;
+                text-transform: capitalize;
+            }
+
+            .form #category:focus {
+                outline: none;
+            }
+
+            .form .category {
+                width: 100%;
+                margin-bottom: 20px;
+                float: right;
+                background-color: transparent;
+                border: 0px;
+                border-bottom: 1px solid white;
+                color: white;
+                padding: 5px;
+            }
+
+            .form .category:focus {
+                outline: none;
+            }
+
+            .form .category::placeholder {
+                color: white;
+            }
+
+            .form textarea {
+                width: 100%;
+                min-height: 200px;
+                max-height: 200px;
+                margin-bottom: 20px;
+                float: right;
+                background-color: transparent;
+                border: 0px;
+                border-bottom: 1px solid white;
+                color: white;
+                padding: 5px;
+            }
+
+            .form textarea:focus {
+                outline: none;
+            }
+
+            .form .submitformbtn {
+                padding: 5px 20px;
+                float: right;
+                background-color: #8096df;
+                border-radius: 5px;
+                text-transform: uppercase;
+                border: 2px solid transparent;
+                color: white;
+                font-size: 15px;
+            }
+
+            .form .submitformbtn:hover {
+                color: #8096df;
+                background-color: transparent;
+                border: 2px solid #8096df;
+            }
+
+            .form .formcross {
+                font-size: 20px;
+                color: white;
+                float: right;
+                margin-right: 20px;
+                margin-top: -45px;
+            }
+
+            @media(max-width:1100px) {
+                .row {
+                    flex-wrap: wrap;
+                    margin-top: 40px;
+                }
+
+                .computerdiv {
+                    width: 100%;
+                    padding: 20px;
+                }
+
+                .row .layout {
+
+                    width: 100%;
+
+                }
+                .row .layout .element {
+                width: 90%;
+            }
+            .row .lay2
+            {
+                order: 2;
+            }
+            .mechanicaldiv {
+                width: 100%;
+                margin: auto;
+                order:1;
+            }
+            .form
+            {
+                width: 100%;
+                top: 0;
+                left: 0;
+                height: 100vh;
+            }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <header class="sticky-top bg-light">
+                <div class="container">
+                    <div class="navbar navbar-light navmain">
+                        <div class="nav1">
+                            <img src="./assest/logo.png" alt="headerLogo" class="image">
+                            <p><span>solution</span> provider</p>
+                        </div>
+                        <div class="nav2">
+                            <ul class="nav navbar">
+                                <li class="navbar-item"><a href="./index.html">home</a></li>
+                                <li class="navbar-item"><a href="./Category.html">category</a></li>
+                                <li class="navbar-item"><a href="./Review.html">review</a></li>
+                                <li class="navbar-item"><a href="./AboutUs.html">about us</a></li>
+                                <li class="navbar-item"><a href="./Help.html">help</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav2">
-                        <ul class="nav navbar">
-                            <li class="navbar-item"><a href="./index.html">home</a></li>
-                            <li class="navbar-item"><a href="./Category.html">category</a></li>
-                            <li class="navbar-item"><a href="./Review.html">review</a></li>
-                            <li class="navbar-item"><a href="./AboutUs.html">about us</a></li>
-                            <li class="navbar-item"><a href="./Help.html">help</a></li>
-                        </ul>
-                    </div>
-                    <!-- <div class="nav3">
-                        <ul class="nav navbar">
-                            <li class="navbar-item"><a href="#" class="loginbtn">Login<i class="fa fa-angle-right"></i></a></li>
-                            <li class="navbar-item purple"><a href="#" class="signupbtn">Sign up<i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                    </div> -->
+                </div>
+            </header>
+            <!-- Computer Services -->
+            <div class="row">
+                <div class="computerdiv">
+                    <img class="computer" src="./assest/computer-repair-services-in-patna.png" alt="">
+                    <h1>computer services</h1>
+                </div>
+                <div class="layout">
+                    <a href="#" class="element formbtn">app development</a>
+                    <a href="#" class="element formbtn">internet of things</a>
+                    <a href="#" class="element formbtn">web development</a>
+                    <a href="#" class="element formbtn">ui/ux</a>
+                    <a href="#" class="element formbtn">Grapic design</a>
+                    <a href="#" class="element formbtn"> machine learning</a>
+                    <a href="#" class="element mb-0 formbtn">software issues</a>
                 </div>
             </div>
-        </header>
-        <!-- Computer Services -->
-        <div class="row">
-            <div class="computerdiv">
-                <img class="computer" src="./assest/computer-repair-services-in-patna.png" alt="">
-                <h1>computer services</h1>
-            </div>
-            <div class="layout">
-                <a href="#" class="element formbtn">app development</a>
-                <a href="#" class="element formbtn">internet of things</a>
-                <a href="#" class="element formbtn">web development</a>
-                <a href="#" class="element formbtn">ui/ux</a>
-                <a href="#" class="element formbtn">Grapic design</a>
-                <a href="#" class="element formbtn"> machine learning</a>
-                <a href="#" class="element mb-0 formbtn">software issues</a>
+
+
+            <!-- Mechanical Services -->
+            <div class="row">
+                <div class="layout lay2">
+                    <a href="#" class="element formbtn">3D and 2D Design Analysis</a>
+                    <a href="#" class="element formbtn">3D Design</a>
+                    <a href="#" class="element formbtn">Master CAM</a>
+                    <a href="#" class="element formbtn">VMC</a>
+                    <a href="#" class="element formbtn">3D Router</a>
+                    <a href="#" class="element formbtn">Panchure jodna</a>
+                    <a href="#" class="element mb-0 formbtn">Baki saare kaam</a>
+                </div>
+                <div class="mechanicaldiv">
+                    <img class="mechanical" src="./assest/egngineeringdesign.jpg" alt="">
+                    <h1>Mechanical services</h1>
+                </div>
             </div>
         </div>
 
-
-        <!-- Mechanical Services -->
-        <div class="row">
-            <div class="layout lay2">
-                <a href="#" class="element formbtn">3D and 2D Design Analysis</a>
-                <a href="#" class="element formbtn">3D Design</a>
-                <a href="#" class="element formbtn">Master CAM</a>
-                <a href="#" class="element formbtn">VMC</a>
-                <a href="#" class="element formbtn">3D Router</a>
-                <a href="#" class="element formbtn">Panchure jodna</a>
-                <a href="#" class="element mb-0 formbtn">Baki saare kaam</a>
-            </div>
-            <div class="mechanicaldiv">
-                <img class="mechanical" src="./assest/egngineeringdesign.jpg" alt="">
-                <h1>Mechanical services</h1>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- login card -->
-    <div class="logincard">
-        <img src="./assest/avtarlogin.png" class="loginavtar" alt="">
-        <a href="#" class="logincross"><i class="fa fa-times"></i></a>
-        <h1>enter your credentials</h1>
-        <form>
-            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
-            <input type="text" id="lname" name="lname" placeholder="Password" required><br><br>
-            <div class="loginbottom">
-                <div class="col-md-6">
-                    <div class="icons">
-                        <a href="#" class="google"><i class="fab fa-google"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div><br><br>
-                    <a href="#" class="forgot">forgot password?</a>
-                </div>
-                <div class="col-md-6">
-                    <input type="submit" class="submit" value="Login">
-                </div>
-            </div>
-        </form>
-    </div>
-
-    <!-- forgot password -->
-    <div class="forgotcard">
-        <a href="#" class="forgotcross"><i class="fa fa-times"></i></a>
-        <h1>forgot password</h1>
-        <form>
-            <input type="text" id="email" name="email" placeholder="Enter Email" required><br>
-            <input type="submit" class="submit" value="Submit">
-        </form>
-    </div>
-
-    <!-- signup -->
-    <div class="signupcard">
-        <img src="./assest/avtarlogin.png" class="signupavtar" alt="">
-        <a href="#" class="signupcross"><i class="fa fa-times"></i></a>
-        <h1>enter signup details</h1>
-        <form>
-            <input type="text" id="fname" name="fname" placeholder="Enter Your Name" required><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter Mobile Number" required><br>
-            <input type="text" id="fname" name="fname" placeholder="Enter Email" required><br>
-            <input type="text" id="fname" name="fname" placeholder="Set Password" required><br>
-            <input type="text" id="lname" name="lname" placeholder="Confirm Password" required><br><br>
-            <div class="signupbottom">
-                <div class="col-md-4" style="padding-left:0;background-color: transparent;">
-                    <div class="icons">
-                        <a href="#" class="google"><i class="fab fa-google"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </div><br><br>
-                </div>
-                <div class="col-md-8">
-                    <input type="button" class="submit" value="Login">
-                    <input type="submit" class="submit" value="Signup">
-                </div>
-            </div>
-        </form>
-    </div>
-
-
-    <div class="chatscreen">
-        <h1>welcome to live chat</h1>
-        <hr>
-        <p>monday,1:27pm</p>
-        <div class="msg_sec">
-            <div class="bot_chat">
-                <p>Welcome to 360 Solution Provider Chat bot!</p>
-            </div>
-            <div class="user_chat">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
-            </div>
-            <div class="bot_chat">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
-            </div>
-            <div class="user_chat">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
-            </div>
-            <div class="bot_chat">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptate!it. Ullam, adipisci!</p>
-            </div>
-            <div class="user_chat">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, adipisci!</p>
-            </div>
-        </div>
-        <form action="">
-            <input type="text">
-            <input class="btn" type="button" value="send">
-        </form>
-    </div>
-
-
+    <!-- Query form -->
     <div class="form">
         <h1>Query form</h1>
         <a href="#" class="formcross"><i class="fa fa-times"></i></a>
@@ -410,6 +306,7 @@
             <input type="button" value="Submit" class="submitformbtn">
         </form>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
