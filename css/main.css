@@ -1,1 +1,65 @@
-/*# sourceMappingURL=main.css.map */
+.aboutthecompany .bg-computer {
+  padding: 30px;
+  border: 1px solid black;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../assest/computer.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assest/computer.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.aboutthecompany .bg-computer:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 15px 15px 5px #aaaaaa;
+          box-shadow: 15px 15px 5px #aaaaaa;
+}
+.aboutthecompany .bg-computer h1, .aboutthecompany .bg-computer p {
+  text-align: center;
+  color: white;
+}
+.aboutthecompany .bg-computer h1 span, .aboutthecompany .bg-computer p span {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.ourpriorities h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.ourpriorities .card {
+  border: 0;
+  height: 100%;
+}
+.ourpriorities .card-header {
+  background-color: transparent;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.ourpriorities .card-header i {
+  margin-right: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.ourpriorities .card-header p {
+  margin: 0;
+}
+.ourpriorities .card-body {
+  border: 1px solid black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.ourpriorities .card-body p {
+  margin: 0;
+  text-align: justify;
+}
+.ourpriorities .card:hover .card-body {
+  -webkit-box-shadow: 0px 0px 10px 2px blue;
+          box-shadow: 0px 0px 10px 2px blue;
+}/*# sourceMappingURL=main.css.map */
