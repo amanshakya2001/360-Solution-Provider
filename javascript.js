@@ -6,28 +6,32 @@ function bot() {
         x.css('display', 'none');
     }
 }
+
+
 $(".submitformbtn").click(function SubForm() {
     if ($(".category").val() == "" || $("#category").val() == "" || $("#query").val() == "") {
-        alert("Fill all the values in form");
+        swal("Warning","Fill all the values in form","error");
     }
     else {
-        $(".submitformbtn").prop('disabled', true);
+        $(".submitformbtn").attr("disabled","disabled");
         $.ajax({
             url: 'https://api.apispreadsheets.com/data/wqHz21sWfMGFjPoQ/',
             type: 'post',
             data: $("#myForm").serializeArray(),
             success: function () {
-                alert("Query Submitted Successfully");
+                swal("Hurray","Query Submitted Successfully","success");
                 $(".container-fluid").css("filter", "blur(0px)");
                 $(".form").css("display", "none");
                 $("body").css("overflow", "visible");
+                resetForm();
             },
             error: function () {
-                alert("There is an issue try again later");
+                swal("Warning","There is an issue try again later","error");
                 $(".container-fluid").css("filter", "blur(0px)");
                 $(".form").css("display", "none");
                 $("body").css("overflow", "visible");
-            }
+                resetForm();
+            } 
         });
     }
 
@@ -110,4 +114,12 @@ switch (progress) {
         $(".progress").text("No Query Found");
         $(".progress").css("padding-left", "40%");
         break;
+}
+
+
+let resetForm = ()=>{
+    $(".category").val("");
+    $("#category").val("");
+    $("#query").val("");
+    $(".submitformbtn").removeAttr("disabled");
 }

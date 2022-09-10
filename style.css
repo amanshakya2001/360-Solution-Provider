@@ -1,9 +1,27 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header .navbar-brand p{
+    color: #5e57e3;
+    text-transform: uppercase;
+    margin-top:7px ;
+    margin-left: 10px;
+    font-weight: 1000;
+    margin-bottom: 200;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-fluid
 {
     padding: 0;
@@ -39,7 +57,7 @@
 }
 .container-fluid .navbar .nav1
 {
-    width: 10%;
+    width: 15%;
     display: flex;
 }
 .container-fluid .navbar .nav1 p
@@ -58,7 +76,7 @@
 }
 .container-fluid .navbar .nav2
 {
-    width: 50%;
+    width: 80%;
 }
 .container-fluid .navbar .nav2 ul li a
 {
